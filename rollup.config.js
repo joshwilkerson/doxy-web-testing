@@ -1,9 +1,11 @@
-import { babel } from "@rollup/plugin-babel";
-import external from "rollup-plugin-peer-deps-external";
-import resolve from "@rollup/plugin-node-resolve";
-import scss from "rollup-plugin-scss";
-import typescript from "@rollup/plugin-typescript";
-import { terser } from "rollup-plugin-terser";
+import { babel } from "@rollup/plugin-babel"
+import external from "rollup-plugin-peer-deps-external"
+import resolve from "@rollup/plugin-node-resolve"
+import scss from "rollup-plugin-scss"
+import typescript from "@rollup/plugin-typescript"
+import { terser } from "rollup-plugin-terser"
+import postcss from "postcss"
+import autoprefixer from "autoprefixer"
 
 export default [
   {
@@ -21,9 +23,10 @@ export default [
     ],
     plugins: [
       scss({
-        output: true,
+        output: "dist/css/styles.min.css",
         failOnError: true,
         outputStyle: "compressed",
+        processor: () => postcss([autoprefixer()]),
       }),
       babel({
         exclude: "node_modules/**",
@@ -35,5 +38,5 @@ export default [
       terser(),
     ],
   },
-];
+]
 
