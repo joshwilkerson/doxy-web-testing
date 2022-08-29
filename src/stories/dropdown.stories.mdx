@@ -1,0 +1,105 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import {
+  Menu,
+  MenuList,
+  MenuButton,
+  MenuItem,
+  MenuLink,
+} from "@reach/menu-button";
+import {
+  downCaret,
+} from "@planningcenter/icons/paths/general";
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+
+<Meta title="Legacy/Dropdowns" />
+
+export function Icon({ desc, name, path, title, style, ...props }) {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      role="img"
+      style={{
+        display: "inline-block",
+        verticalAlign: "text-top",
+        height: "1em",
+        width: "1em",
+        fontSize: "1em",
+        ...style,
+      }}
+      {...props}
+    >
+      <title>{title}</title>
+      <desc>{desc}</desc>
+      <path d={path} fill="currentColor" />
+    </svg>
+  );
+}
+
+## Dropdown Menu
+For dropdowns, we use [Reach MenuButton](https://reach.tech/menu-button/). We use a few of our own class names for custom styling.
+
+<Preview>
+  <Story name="Dropdown Menu">
+    <div
+      data-color-scheme="light"
+      data-contrast="low"
+      style={{paddingBottom: "1rem"}}
+    >
+      <Menu>
+        <MenuButton className="compact-btn secondary-btn btn">
+          Open menu
+          <span data-reach-menu-button-toggle-icon style={{marginLeft: "4px", position: "relative", top: 1}}>
+            <Icon
+              title="Down caret"
+              desc="Open Church Center Publishing status menu"
+              path={downCaret}
+            />
+          </span>
+        </MenuButton>
+        <MenuList>
+          <MenuLink
+            className="dropdown-menu-item"
+            target="_blank"
+            rel="noreferrer"
+            href=""
+          >
+            First Option
+          </MenuLink>
+          <MenuLink
+            className="dropdown-menu-item"
+            target="_blank"
+            rel="noreferrer"
+            href=""
+          >
+            Second Option
+          </MenuLink>
+        </MenuList>
+      </Menu>
+    </div>
+  </Story>
+</Preview>
+
+| Dropdown classes |  |
+| ---- | ---- |
+| <code>MenuButton</code> | use the button class you desire; in most cases, <code>.secondary-btn.btn</code> |
+| <code>MenuLink</code> | <code>.dropdown-menu-item</code> |
+
+### Usage
+```html
+<Menu>
+  <MenuButton className="compact-btn secondary-btn btn">
+    Open menu
+    <span data-reach-menu-button-toggle-icon style={{marginLeft: "4px"}}>
+      <DownCaretIcon />
+    </span>
+  </MenuButton>
+  <MenuList>
+    <MenuLink
+      className="dropdown-menu-item"
+      href=""
+    >
+      Link text
+    </MenuLink>
+  </MenuList>
+</Menu>
+```

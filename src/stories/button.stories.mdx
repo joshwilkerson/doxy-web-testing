@@ -1,0 +1,158 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper"
+
+<Meta title="Legacy/Button" />
+
+## Button
+
+- Button labels should use sentence case.
+- Plain text links should always be rendered in turquoise.
+
+export function SampleButtonLayout(props) {
+  return (
+    <div
+      style={{
+        alignItems: "center",
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "1rem",
+      }}
+      {...props}
+    />
+  )
+}
+
+export function Avatar() {
+  return (
+    <img
+      src={"https://www.placecage.com/g/100/100"}
+      alt={"Nic Cage's Avatar"}
+      style={{
+        borderRadius: "50%",
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+      }}
+    />
+  )
+}
+
+<Preview>
+  <Story name="Button">
+    <>
+      <ColorSchemeWrapper scheme="light">
+        <SampleButtonLayout>
+          <button className="btn">Primary</button>
+          <button className="secondary-btn btn">Secondary</button>
+          <button className="badge-btn btn">Badge</button>
+          <button className="badge-btn avatar-btn btn">
+            <div className="w-4 h-4">
+              <Avatar />
+            </div>
+            Badge
+          </button>
+          <button className="destroy-btn btn">Destroy</button>
+          <button className="secondary-btn destroy-btn btn">
+            Secondary destroy
+          </button>
+          <button className="disabled-btn btn">Disabled</button>
+          <button className="secondary-btn  disabled-btn btn">
+            Secondary disabled
+          </button>
+          <button className="badge-btn disabled-btn btn">Badge</button>
+          <button className="badge-btn avatar-btn disabled-btn btn">
+            <div className="w-4 h-4">
+              <Avatar />
+            </div>
+            Badge
+          </button>
+          <button className="link-btn btn">Link</button>
+        </SampleButtonLayout>
+      </ColorSchemeWrapper>
+      <ColorSchemeWrapper scheme="dark">
+        <SampleButtonLayout>
+          <button className="btn">Primary</button>
+          <button className="secondary-btn btn">Secondary</button>
+          <button className="badge-btn btn">Badge</button>
+          <button className="badge-btn avatar-btn btn">
+            <div className="w-4 h-4">
+              <Avatar />
+            </div>
+            Badge
+          </button>
+          <button className="destroy-btn btn">Destroy</button>
+          <button className="secondary-btn destroy-btn btn">
+            Secondary destroy
+          </button>
+          <button className="disabled-btn btn">Disabled</button>
+          <button className="secondary-btn disabled-btn btn">
+            Secondary disabled
+          </button>
+          <button className="badge-btn disabled-btn btn">Badge</button>
+          <button className="badge-btn avatar-btn disabled-btn btn">
+            <div className="w-4 h-4">
+              <Avatar />
+            </div>
+            Badge
+          </button>
+          <button className="link-btn btn">Link</button>
+        </SampleButtonLayout>
+      </ColorSchemeWrapper>
+    </>
+  </Story>
+</Preview>
+
+### Sizes
+
+<Preview>
+  <Story name="Button Sizes">
+    <div
+      data-color-scheme="light"
+      data-contrast="low"
+      style={{
+        display: "flex",
+        gap: "2rem",
+      }}
+    >
+      <div>
+        <h4 className="mb-1">Avatar Btn</h4>
+        <button className="badge-btn avatar-btn btn">
+          <div className="w-4 h-4">
+            <Avatar />
+          </div>
+          Badge
+        </button>
+      </div>
+      <div>
+        <h4 className="mb-1">Compact</h4>
+        <button className="compact-btn btn">Give now</button>
+      </div>
+      <div>
+        <h4 className="mb-1">Minor</h4>
+        <button className="minor-btn secondary-btn btn">+ Add event</button>
+      </div>
+      <div>
+        <h4 className="mb-1">Minor Compact</h4>
+        <button className="destroy-btn minor-compact-btn btn">Delete</button>
+      </div>
+    </div>
+  </Story>
+</Preview>
+
+<!-- prettier-ignore -->
+| Button classes |  |
+| ---- | ---- |
+| Base | <code>.btn</code> |
+| Options (appended) | <code>.secondary-btn</code> <code>.badge-btn</code> <code>.destroy-btn</code> <code>.disabled-btn</code> <code>.link-btn</code> |
+| Size (appended) | <code>.avatar-btn</code> <code>.compact-btn</code> <code>.minor-btn</code> <code>.minor-compact-btn</code> |
+
+### Usage
+
+```html
+<button class="secondary-btn destroy-btn btn">Delete user</button>
+
+<button class="badge-btn avatar-btn btn">
+  <div className="w-4 h-4"><Avatar /></div>
+  Pico's note
+</button>
+```

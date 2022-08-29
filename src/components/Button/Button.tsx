@@ -1,21 +1,34 @@
-import React from "react";
+import React from 'react'
 
-export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  variant: "primary" | "danger"; 
-  shape?: "rounded";
+export interface ButtonProps {
+  variant?: 'filled' | "outline" | "naked"
+  /**
+   * How large should the button be?
+   */
+  size?: 'lg' | 'md' | 'sm' | 'xs'
+  label: string
+  disabled: boolean
+  onClick: () => void
 }
 
+/**
+ * Primary UI component for user interaction
+*/
 export const Button: React.FC<ButtonProps> = ({
-  children,
-  variant,
-  shape,
+  size = 'lg',
+  label = "",
+  variant = 'filled',
+  disabled = false,
   ...props
 }) => {
-  const classNames = `btn btn-${variant} btn-${shape}`;
   return (
-    <button className={classNames} {...props}>
-      {children}
+    <button
+      type="button"
+      className={['btn', `${size}-btn`, `${variant}-btn`].join(' ')}
+      disabled={disabled}
+      {...props}
+    >
+      {label}
     </button>
   );
 };

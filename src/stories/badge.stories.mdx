@@ -1,0 +1,62 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+
+<Meta title="Legacy/Badge" />
+
+## Badge
+
+To differentiate badges from buttons, badges should be tighter, lighter, and less rounded.
+
+export function SampleBadgeLayout(props) {
+  return (
+    <div style={{
+      alignItems: "center",
+      display: "flex",
+      gap: "0.5rem",
+    }} {...props} />
+  );
+}
+
+<Preview>
+  <Story name="Badge">
+    <>
+      <ColorSchemeWrapper scheme="light">
+        <SampleBadgeLayout>
+          <span className="badge">Badge</span>
+          <span className="error-badge badge">Error</span>
+          <span className="success-badge badge">Success</span>
+          <span className="warning-badge badge">Warning</span>
+        </SampleBadgeLayout>
+      </ColorSchemeWrapper>
+      <ColorSchemeWrapper scheme="dark">
+        <SampleBadgeLayout>
+          <span className="badge">Badge</span>
+          <span className="error-badge badge">Error</span>
+          <span className="success-badge badge">Success</span>
+          <span className="warning-badge badge">Warning</span>
+        </SampleBadgeLayout>
+      </ColorSchemeWrapper>
+    </>
+  </Story>
+</Preview>
+
+### Sizes
+<Preview>
+  <Story name="Badge Sizes">
+    <SampleBadgeLayout data-color-scheme="light" data-contrast="low">
+      <span className="badge">Normal</span>
+      <span className="sm-badge badge">Small</span>
+    </SampleBadgeLayout>
+  </Story>
+</Preview>
+
+| Badge classes |  |
+| ---- | ---- |
+| Base | <code>.badge</code> | 
+| Options (appended) | <code>.error-badge</code> <code>.success-badge</code> <code>.warning-badge</code> |
+| Size (appended) | <code>.sm-badge</code> |
+
+### Usage
+```html
+<div class="success-badge badge">Complete</div>
+```
