@@ -2,17 +2,17 @@ import React from "react";
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant: "primary" | "danger"; 
-  shape?: "rounded";
+  variant: "filled" | "outline" | "naked"
+  size: "lg" | "md" | "sm" | "xs"
 }
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   variant,
-  shape,
+  size,
   ...props
 }) => {
-  const classNames = `btn btn-${variant} btn-${shape}`;
+  const classNames = `btn btn-${variant} btn-${size}`;
   return (
     <button className={classNames} {...props}>
       {children}
