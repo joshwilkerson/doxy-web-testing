@@ -1,0 +1,9 @@
+// goes away when Giving is in the monorepo
+.churchcenter-nav-wrapper {
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.churchcenter-nav-wrapper.hideAll {
+  visibility: hidden;
+  opacity: 0;
+}

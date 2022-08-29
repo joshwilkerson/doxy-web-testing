@@ -1,0 +1,215 @@
+button,
+input[type=submit] {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn {
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-brand-gradient-start) 0%, var(--color-brand-gradient-end) 100%);
+  border-radius: 30px;
+  border: 1px solid transparent;
+  color: var(--button--filled-variant--color);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 2rem;
+  white-space: nowrap;
+
+  &[disabled],
+  &.disabled-btn {
+    background-image: none;
+    background: var(--color-tint5);
+    color: var(--color-tint7);
+  }
+
+  &:focus-visible {
+    @include focus-outline
+  }
+
+  &.secondary-btn,
+  &.outlined-btn {
+    background-image: linear-gradient(var(--color-tint10), var(--color-tint10)), linear-gradient(135deg, var(--color-brand-gradient-start) 0%, var(--color-brand-gradient-end) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: double 2px transparent;
+    color: var(--color-brand);
+
+    &.destroy-btn {
+      background-image: linear-gradient(var(--color-tint10), var(--color-tint10)), linear-gradient(135deg, var(--color-ruby) 0%, var(--color-ruby) 100%);
+      color: var(--color-ruby);
+    }
+
+    &.alert-btn {
+      background-image: linear-gradient(var(--color-tint10), var(--color-tint10)), linear-gradient(135deg, var(--color-topaz) 0%, var(--color-topaz) 100%);
+      color: var(--color-topaz);
+    }
+
+    &.compact-btn,
+    &.minor-btn,
+    &.md-btn,
+    &.sm-btn {
+      background-color: var(--color-tint10)
+    }
+
+    button,
+    input[type=submit] {
+      background: none;
+      border: none;
+      color: var(--color-brand);
+    }
+
+    &[disabled],
+    &.disabled-btn {
+      background: none;
+      border-color: var(--color-tint5);
+      border-style: solid;
+      color: var(--color-tint4);
+    }
+  }
+
+  &.destroy-btn {
+    background-image: none;
+    background-color: var(--color-ruby);
+  }
+
+  &.alert-btn {
+    background-image: none;
+    background-color: var(--color-topaz);
+  }
+
+  &.compact-btn,
+  &.md-btn {
+    height: 32px;
+    padding: 0 1rem;
+
+    &,
+    input[type=submit] {
+      font-size: 14px
+    }
+  }
+
+  &.badge-btn {
+    background: var(--color-tint7);
+    color: var(--color-tint2);
+
+    &[disabled],
+    &.disabled-btn {
+      color: var(--color-tint4)
+    }
+  }
+
+  &.avatar-btn {
+    font-size: 14px;
+    gap: 0.5rem;
+    padding: 0.25rem 1rem 0.25rem 0.25rem;
+
+    &[disabled],
+    &.disabled-btn {
+      img {
+        opacity: 0.3
+      }
+    }
+  }
+
+  &.minor-btn,
+  &.sm-btn {
+    border: double 1px transparent;
+    height: 24px;
+    line-height: 1;
+    padding: 0 12px;
+
+    &,
+    input[type=submit] {
+      font-size: 12px
+    }
+  }
+
+  &.minor-compact-btn,
+  &.naked-btn {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: var(--color-tint2);
+    height: auto;
+    padding: 0;
+
+    &,
+    input[type=submit] {
+      font-size: 12px
+    }
+
+    &.destroy-btn {
+      color: var(--color-ruby)
+    }
+
+    &.alert-btn {
+      color: var(--color-topaz)
+    }
+
+    &:before {
+      display: none
+    }
+  }
+
+  &.naked-btn {
+    padding: 0 8px
+  }
+}
+
+.link-btn,
+.text-btn {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: var(--color-brand);
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+.text-btn {
+  color: var(--color-tint2)
+}
+
+.stripped-btn,
+.button--style-reset {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  font-family: inherit;
+  font-weight: normal;
+}
+
+
+// GROUPS ONLY - would like to standardize these styles to use secondary classnames, etc
+.destroy-outline-btn {
+  background-color: var(--color-tint10);
+  background-image: linear-gradient(var(--color-tint10), var(--color-tint10)),
+    linear-gradient(135deg, var(--color-ruby) 0%, var(--color-ruby) 100%);
+  color: var(--color-ruby);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: double 2px transparent;
+}
+
+.destroy-outline-btn:hover:enabled,
+.destroy-outline-btn--loading,
+.destroy-outline-btn--loading[disabled] {
+  background: var(--color-ruby);
+  color: var(--color-tint10);
+}
+
+.compact-btn--loading,
+.compact-btn--loading[disabled] {
+  background: linear-gradient(135deg,
+      var(--color-brand-gradient-start) 0%,
+      var(--color-brand-gradient-end) 100%);
+}

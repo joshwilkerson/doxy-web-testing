@@ -1,0 +1,78 @@
+label,
+.label {
+  color: var(--color-tint0);
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+.label-text {
+  display: block;
+  padding-bottom: 8px;
+}
+
+.styled-label {
+  color: var(--color-tint3);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+form, fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.login-form--narrow {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+button, input, select, textarea { font-family: var(--base-font-family) }
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"],
+input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+  background-color: var(--color-tint10);
+  border-radius: 4px;
+  border: 1px solid var(--color-tint5);
+  box-shadow: inset 0 1px 2px var(--color-tint9);
+  color: var(--color-tint1);
+  font-family: var(--base-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  margin: 0;
+  padding: 12px;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &.sm-input,
+  &.small-input {
+    height: 32px;
+    padding: 8px;
+  }
+
+  &:disabled {
+    box-shadow: none;
+    background-color: var(--color-tint9);
+    color: var(--color-tint4);
+    cursor: not-allowed;
+  }
+
+  &:focus, &:focus-visible { @include focus-outline--subtle }
+
+  &::placeholder { color: var(--color-tint4) }
+  &::-webkit-input-placeholder { line-height: 1.2 }
+  &:-ms-input-placeholder { line-height: 1 }
+}
+
+textarea {
+  height: auto;
+  line-height: 1.4;
+  resize: vertical;
+}

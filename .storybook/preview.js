@@ -1,4 +1,4 @@
-import "../src/scss/style.scss"
+import "../src/scss/doxy-web.scss"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

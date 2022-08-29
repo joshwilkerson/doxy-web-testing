@@ -1,0 +1,7 @@
+a, 
+button,
+*[tabindex="0"],
+*[role="button"],
+.focus-visible {
+  &:focus-visible { @include focus-outline }
+}

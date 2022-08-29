@@ -1,0 +1,51 @@
+.directory-checkbox-label {
+  &::before {
+    top: 6px !important;
+  }
+  &::after {
+    top: 9px !important;
+  }
+}
+.directory-nested-checkbox-label {
+  &::before {
+    top: 0 !important;
+  }
+  &::after {
+    top: 3px !important;
+  }
+}
+.directory-checkbox[disabled] + .checkbox-label::before {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+.directory-checkbox[disabled] + .checkbox-label:hover {
+  cursor: not-allowed;
+}
+
+.avatar-list__item {
+  @include breakpoint(to-sm) {
+    min-width: 144px;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+
+  @include breakpoint(from-sm) {
+      @include equal-flex-card($min-width: 136px, $gutter: 32px, $max-cols: 4);
+      position: relative;
+  }
+
+  @include breakpoint(from-med) {
+      @include equal-flex-card($min-width: 136px, $gutter: 48px, $max-cols: 4);
+  }
+}
+
+.avatar-list-item__image  {
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    border-radius: 50%;
+  }
+}

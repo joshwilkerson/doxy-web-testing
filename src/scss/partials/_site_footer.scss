@@ -1,0 +1,37 @@
+.site-footer {
+  background: var(--color-tint9);
+  border-top: 1px solid var(--color-tint7);
+  color: var(--color-tint2);
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 8px;
+
+  @include breakpoint(from-med) {
+    align-items: center;
+    padding: 4px 12px;
+  }
+}
+
+.site-footer__links {
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 2px 4px;
+
+  @include breakpoint(from-sm) { display: flex }
+}
+
+.site-footer__link {
+
+  @include breakpoint(from-sm) {
+    padding: 0 8px;
+  }
+
+  &:first-child { padding-left: 0 }
+  &:not(:last-child) {
+    @include breakpoint(from-sm) { border-right: 1px solid var(--color-tint5) }
+  }
+}

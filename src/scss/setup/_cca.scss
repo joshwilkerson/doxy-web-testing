@@ -1,0 +1,18 @@
+// Match content area padding of CCA-wrapped pages to the corresponding
+// platform margin for consistency with other app elements/screens.
+// Episode layout is full-bleed, so don't override the 0px padding there.
+.page-container:not(.sermon-episode-layout) .page-content {
+  [data-cca-platform="ios"] & {
+    padding: 20px;
+  }
+
+  [data-cca-platform="android"] & {
+    padding: 16px;
+  }
+}
+
+.hide-cca {
+  [data-cca-platform] & {
+    display: none;
+  }
+}

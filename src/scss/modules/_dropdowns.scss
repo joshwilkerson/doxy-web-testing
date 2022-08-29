@@ -1,0 +1,114 @@
+.dropdown {
+  font-size: 14px;
+  position: relative;
+
+  &.is-open,
+  &.dropdown--active {
+
+    > .dropdown__menu,
+    > .dropdown__content { display: block }
+  }
+}
+
+[data-reach-menu] { z-index: 1000 }
+
+[data-reach-menu-button] {
+  overflow: hidden;
+  
+  &:focus-visible { @include focus-outline }
+}
+
+.dropdown__menu, 
+.dropdown__content,
+[data-reach-menu-list],
+[data-reach-menu-items] {
+  background: var(--color-tint10);
+  border: 1px solid var(--color-tint5);
+  border-radius: 4px;
+  font-size: var(--dropdown-menu--font-size, 0.875rem);
+  margin-top: 2px;
+  min-width: 180px;
+  padding: 4px 0;
+}
+
+.dropdown__menu,
+.dropdown__content{
+  list-style-type: none;
+  display: none;
+  left: 0;
+  position: absolute;
+  z-index: 9;
+
+  &.dropdown__menu--naked {
+    background: inherit;
+    border: inherit;
+    margin-top: inherit;
+    min-width: inherit;
+  }
+}
+
+[data-reach-menu-list],
+[data-reach-menu-items] {
+  display: block;
+  outline: none;
+  position: static;
+}
+
+.dropdown__item,
+[data-reach-menu-item] {
+  color: var(--color-tint1);
+  cursor: pointer;
+  display: block;
+  font-size: inherit;
+  padding: 0.25rem 0.75rem;
+  position: relative;
+
+  &:focus { outline: none }
+
+  &:hover,
+  &[data-selected] { 
+    background: var(--color-tint8);
+    color: var(--color-tint1);
+}
+
+  &.active, &.active button {
+    color: var(--color-tint1);
+    font-weight: 600;
+  }
+
+  &:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &:last-child { border-bottom: none }
+
+  a,
+  [data-reach-menu-link] {
+    display: block;
+    color: var(--color-tint1);
+    line-height: 1.25;
+  }
+
+  a[data-reach-menu-link][data-selected] {
+    color: var(--color-tint1);
+  }
+}
+
+.dropdown-item-label { padding: 0.5rem 1rem }
+
+.dropdown-trigger__icon {
+  font-size: 9px;
+  transition: all 0.2s;
+
+  .is-open &,
+  [aria-expanded="true"] & {
+    transform: rotateX(-180deg);
+    top: 0;
+  }
+}
+
+// keyboard-only outline for selected menu item
+[data-reach-menu-list]:focus-visible [data-selected] {
+  @include focus-outline;
+}

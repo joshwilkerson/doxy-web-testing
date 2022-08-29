@@ -1,0 +1,23 @@
+.item-show__image,
+.events-show__placeholder {
+  margin: -1rem -1.5rem 1rem -1.5rem;
+
+  @include breakpoint(from-med) {
+    margin: 0;
+  }
+
+  .event-placeholder {
+    @include breakpoint(to-med) { border-radius: 0 }
+  }
+
+  img {
+    margin: 0 auto;
+
+    @include breakpoint(from-med) { border-radius: 4px }
+  }
+}
+
+.item-show__title {
+  font-size: 24px;
+  font-weight: 500;
+}

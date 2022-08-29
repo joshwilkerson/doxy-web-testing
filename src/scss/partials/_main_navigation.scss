@@ -1,0 +1,49 @@
+.main-navigation {
+  margin-top: -20px;
+  text-align: left;
+  top: 50%;
+}
+
+.main-navigation__trigger {
+  background-color: var(--color-tint6);
+  border: 0;
+  border-radius: 40px;
+  padding: 4px;
+  transition: transform 0.2s;
+
+  &:focus { outline: 0 }
+}
+
+.main-navigation__toggle-icon {
+  .is-open & { transform: scaleY(-1) }
+}
+
+.main-navigation__person-name {
+  transition: all 0.2s;
+  overflow: hidden;
+  width: 0;
+
+  .is-open & {
+    margin-left: 8px;
+    width: auto;
+  }
+}
+
+.main-navigation__menu {
+  left: auto !important;
+  margin-top: 4px !important;
+  min-width: 170px;
+  right: 0;
+}
+
+.main-navigation__link {
+  color: var(--color-tint2);
+  display: block;
+  font-weight: 400;
+  padding: 4px 12px;
+  white-space: nowrap;
+
+  &:hover { background: var(--color-tint7) }
+  .main-navigation__menu-item:first-child & { border-radius: 3px 3px 0 0 }
+  .main-navigation__menu-item:last-child & { border-radius: 0 0 3px 3px }
+}

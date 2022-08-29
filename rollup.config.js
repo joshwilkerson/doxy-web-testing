@@ -23,7 +23,7 @@ export default [
     ],
     plugins: [
       scss({
-        output: "dist/css/styles.min.css",
+        output: "dist/css/doxy-web.min.css",
         failOnError: true,
         outputStyle: "compressed",
         processor: () => postcss([autoprefixer()]),
@@ -31,6 +31,7 @@ export default [
       babel({
         exclude: "node_modules/**",
         presets: ["@babel/preset-react"],
+        babelHelpers: "bundled"
       }),
       external(),
       resolve(),

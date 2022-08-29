@@ -1,0 +1,53 @@
+.date-time-range {
+  @include breakpoint(from-sm) { display: flex }
+}
+
+.date-time-range__container {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(from-sm) { flex-direction: row }
+}
+
+.date-time-range__date {
+  flex: 1;
+  margin-bottom: 0.5rem;
+
+  @include breakpoint(from-sm) { margin-bottom: 0 }
+  
+  &.date-time-range__end-date {
+    @include breakpoint(from-sm) { order: 1 }
+  }
+}
+
+.date-time-range__time {
+  flex: 1;
+  
+  &.date-time-range__start-time {
+    @include breakpoint(from-sm) { padding-left: 0.5rem }
+    @include breakpoint(from-md) { padding-left: 0 }
+  }
+  &.date-time-range__end-time {
+    @include breakpoint(from-sm) { padding-right: 0.5rem }
+  }
+}
+
+
+.date-time-range__joinder {
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @include breakpoint(from-sm) {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  @include breakpoint(from-md) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
