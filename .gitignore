@@ -1,0 +1,6 @@
+storybook-static
+dist
+node_modules
+*.log
+temp
+.eslintcache
