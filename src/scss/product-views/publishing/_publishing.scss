@@ -1,0 +1,103 @@
+// SERMONS STUFF
+.sermon-episode-layout {
+  // Hide elements from mobile view on Episode detail page
+  @include breakpoint(to-lg) {
+    header.Header,
+    footer.site-footer {
+      display: none;
+    }
+    
+    .page-content { padding: 0 }
+  }
+
+}
+
+// Override the 100vh b/c Mobile Safari browser chrome adds to this causing height to be greater than actual screen dimensions. Intentional on their part, no fix planned
+@include breakpoint(to-lg) {
+  #react-root, 
+  .page-container.sermon-episode-layout {
+    height: 100%;
+  }
+}
+
+.set-focus-invisible {
+  outline: 0;
+}
+
+// A little workaround to set untouchable markup to 100% height
+.container--sermon-episode-layout,
+.container--sermon-episode-layout [tabindex="-1"],
+.container--sermon-episode-layout .full-height-col-to-xl {
+  height: 100%;
+}
+
+.container--sermon-episode-layout > [tabindex="-1"] > [tabindex="-1"],
+.container--sermon-episode-layout .full-height-col-to-xl {
+  @include breakpoint(to-lg) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.card-list-item__image {
+  background-color: var(--color-tint8);
+}
+
+.tab-widget-wrapper {
+  position: relative;
+  width: 100%;
+  /* subtract tab action bar height */
+  height: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(from-lg) {
+    border-radius: 0 5px 5px 5px;
+    border: 1px solid var(--color-tint8);
+    height: calc(100% - 32px);
+  }
+
+  .loading-wrapper {
+    height: 100%;
+  }
+
+  .chat-select-container {
+    width: 100%;
+    padding: 8px 8px 8px 12px;
+    @include breakpoint(from-lg) {
+      border-radius: 4px 4px 0 0;
+    }
+
+    select {
+      font-size: 16px;
+      height: 32px;
+      flex: 1;
+    }
+  }
+}
+
+.tab-widget-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  @include breakpoint(from-lg) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.block-text-clamped {
+  display: block;
+  overflow: hidden;
+  line-height: 1.3em;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.block-text-unclamped {
+  display: block;
+  line-height: 1.3em;
+}

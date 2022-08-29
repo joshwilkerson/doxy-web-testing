@@ -1,3 +1,3 @@
-import "./scss/style.scss"
+import "./scss/doxy-web.scss"
 
 export * from "./components/Button"

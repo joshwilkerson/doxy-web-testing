@@ -1,0 +1,25 @@
+// PAGE HEADER
+.cco-header {
+  background: var(--color-tint9);
+  border-bottom: 1px solid var(--color-tint7);
+  padding: 16px 0;
+  position: relative;
+
+  > .container { height: 100% }
+
+  .org-logo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    a { max-width: 440px; }
+
+    img {
+      max-height: 80px;
+
+      @include breakpoint(from-med) {
+        max-height: 100px
+      }
+    }
+  }
+}

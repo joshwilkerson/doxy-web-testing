@@ -1,0 +1,77 @@
+.card-list {
+  @include breakpoint(from-sm) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-top: -16px;
+  }
+
+  @include breakpoint(from-med) {
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+}
+.card-list__item {
+
+  @include breakpoint(to-sm) {
+    background: none !important;
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint(from-sm) {
+    @include equal-flex-card($min-width: 272px, $gutter: 16px, $max-cols: 3);
+    position: relative;
+
+    @include breakpoint(from-med) {
+      @include equal-flex-card($min-width: 272px, $gutter: 32px, $max-cols: 3);
+    }
+  }
+
+  .card-list.card-list--max-2 & {
+    @include breakpoint(from-sm) {
+      @include equal-flex-card($min-width: 272px, $gutter: 16px, $max-cols: 2);
+      position: relative;
+
+      @include breakpoint(from-med) {
+        @include equal-flex-card($min-width: 272px, $gutter: 32px, $max-cols: 2);
+      }
+    }
+  }
+
+  .card-list.card-list--max-4 & {
+    @include breakpoint(from-sm) {
+      @include equal-flex-card($min-width: 272px, $gutter: 16px, $max-cols: 4);
+      position: relative;
+
+      @include breakpoint(from-med) {
+        @include equal-flex-card($min-width: 272px, $gutter: 32px, $max-cols: 4);
+      }
+    }
+  }
+}
+
+.card-list-item__title {
+  font-size: 1rem;
+}
+
+.card-list-item__image {
+  margin-bottom: 12px;
+
+  img {
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+}
+
+.card-list-item__wrapper-link {
+  color: inherit;
+  display: block;
+  font-weight: inherit;
+}
+
+.card-list-item__details {
+  font-size: 13px;
+  
+  @include breakpoint(from-sm) { padding-top: 6px }
+}

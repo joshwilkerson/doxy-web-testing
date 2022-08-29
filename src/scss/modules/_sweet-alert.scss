@@ -1,0 +1,162 @@
+$quiet-base-btn-bg: #F5F5F5;
+$quiet-base-btn-border: #CCCCCC;
+$quiet-btn-hover-bg: #EBEBEB;
+$quiet-base-btn-text: #999999;
+
+$create-btn-bg: #69c36e;
+$create-btn-border: darken(#69c36e, 5%);
+$create-btn-hover-bg: #64b969;
+$create-btn-focus-shadow: rgba($create-btn-bg, .65);
+
+$destroy-btn-bg: #df5a4c;
+$destroy-btn-border: darken(#df5a4c, 5%);
+$destroy-btn-hover-bg: #d45648;
+$destroy-btn-focus-shadow: rgba($destroy-btn-bg, .65);
+
+$app-btn-bg: #42A5F5;
+$app-btn-border: darken($app-btn-bg, 5%);
+$app-btn-hover-bg: darken($app-btn-bg, 5%);
+$app-btn-focus-shadow: rgba($app-btn-bg, .65);
+
+$modal2-box-shadow-color: rgba(0, 0, 0, 0.1);
+
+.swal-overlay { background: rgba(hsl(0, 0%, 98%), 0.9) }
+
+.swal-modal {
+  box-shadow: 0 0 8px $modal2-box-shadow-color;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.swal-icon {
+  height: 64px;
+  margin: 0 auto 24px;
+  width: 64px;
+
+  &:first-child { margin-top: 0 }
+}
+
+.swal-icon--error {
+  border: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.153 11.23L8.00001 9.07699L5.84701 11.23L4.77001 10.153L6.92301 7.99999L4.77001 5.84699L5.84701 4.76999L8.00001 6.92299L10.153 4.76999L11.23 5.84699L9.07701 7.99999L11.23 10.153L10.153 11.23ZM13.384 2.61599C12.3192 1.55118 10.9625 0.82604 9.48551 0.532272C8.00855 0.238505 6.47764 0.389302 5.08637 0.965595C3.69511 1.54189 2.50598 2.51779 1.66936 3.7699C0.832732 5.02201 0.386185 6.49409 0.386185 7.99999C0.386185 9.50589 0.832732 10.978 1.66936 12.2301C2.50598 13.4822 3.69511 14.4581 5.08637 15.0344C6.47764 15.6107 8.00855 15.7615 9.48551 15.4677C10.9625 15.1739 12.3192 14.4488 13.384 13.384C14.8107 11.9554 15.6121 10.019 15.6121 7.99999C15.6121 5.98099 14.8107 4.04455 13.384 2.61599Z" fill="%23e75146" /></svg>');
+}
+.swal-icon--error__line { display: none }
+
+.swal-icon--warning {
+  border: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.669 13.676L8.65499 1.56099C8.58867 1.44593 8.49322 1.35037 8.37823 1.28392C8.26325 1.21748 8.13279 1.1825 7.99999 1.1825C7.86718 1.1825 7.73672 1.21748 7.62174 1.28392C7.50675 1.35037 7.4113 1.44593 7.34499 1.56099L0.330986 13.676C0.264196 13.7911 0.228916 13.9217 0.2287 14.0548C0.228484 14.1878 0.26334 14.3186 0.329756 14.4339C0.396172 14.5492 0.491802 14.6449 0.60701 14.7115C0.722218 14.778 0.852933 14.813 0.985986 14.813H15.014C15.147 14.813 15.2778 14.778 15.393 14.7115C15.5082 14.6449 15.6038 14.5492 15.6702 14.4339C15.7366 14.3186 15.7715 14.1878 15.7713 14.0548C15.7711 13.9217 15.7358 13.7911 15.669 13.676ZM8.75699 12.542H7.24299V11.028H8.75699V12.542ZM8.75699 9.51399H7.24299V6.48499H8.75699V9.51399Z" fill="%23fbc02d" /></svg>');
+}
+.swal-icon--warning__body,
+.swal-icon--warning__dot { display: none }
+
+.swal-icon--info {
+  border: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.8 5.6H7.2V4H8.8V5.6ZM8.8 12H7.2V7.2H8.8V12ZM8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0V0Z" fill="%23059cee" /></svg>');
+}
+.swal-icon--info:before,
+.swal-icon--info:after { display: none }
+
+.swal-icon--success {
+  border: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0V0ZM7 11.63L3.43 8.07L4.57 6.93L7 9.37L11.43 4.93L12.57 6.07L7 11.63Z" fill="%232aa92f" /></svg>');
+}
+.swal-icon--success:before,
+.swal-icon--success:after,
+.swal-icon--success__line,
+.swal-icon--success__ring,
+.swal-icon--success__hide-corners { display: none }
+
+.swal-title {
+  color: var(--color-tint2);
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -0.0125em;
+  margin-bottom: 24px;
+  padding: 0;
+
+  &:not(:last-child) { margin-bottom: 16px }
+}
+
+.swal-content {
+  margin: 0;
+  padding: 0;
+
+  p {
+    margin-bottom: 16px;
+  }
+}
+
+.swal-text {
+  color: var(--color-tint1);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.swal-footer {
+  border-top: 1px solid var(--color-tint6);
+  margin: 24px -32px -32px;
+  padding: 16px;
+  text-align: center;
+}
+
+.swal-button {
+  align-items: center;
+  background-color: $app-btn-bg;
+  border-color: $app-btn-border;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 2.3;
+  padding: 0 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:not([disabled]):hover { background-color: $app-btn-hover-bg }
+  &:focus { box-shadow: 0 0 1px 2px rgba($app-btn-focus-shadow, .75), 0 1px 1px rgba(0, 0, 0, .15) }
+}
+
+.swal-button--confirm,
+.swal-button--delete {
+  &:not([disabled]):hover { background-color: $app-btn-hover-bg }
+  &:focus { box-shadow: 0 0 1px 2px rgba($app-btn-focus-shadow, .75), 0 1px 1px rgba(0, 0, 0, .15) }
+
+  .success & {
+    background-color: $create-btn-bg;
+    border-color: $create-btn-border;
+    color: white;
+
+    &:not([disabled]):hover { background-color: $create-btn-hover-bg }
+    &:focus { box-shadow: 0 0 1px 2px rgba($create-btn-focus-shadow, .75), 0 1px 1px rgba(0, 0, 0, .15) }
+  }
+  .info & {
+    background-color: $app-btn-bg;
+    border-color: $app-btn-border;
+    color: white;
+
+    &:not([disabled]):hover { background-color: $app-btn-hover-bg }
+    &:focus { box-shadow: 0 0 1px 2px rgba($app-btn-focus-shadow, .75), 0 1px 1px rgba(0, 0, 0, .15) }
+  }
+  .warning &,
+  .error & {
+    background-color: $destroy-btn-bg;
+    border-color: $destroy-btn-border;
+    color: white;
+
+    &:not([disabled]):hover { background-color: $destroy-btn-hover-bg }
+    &:focus { box-shadow: 0 0 1px 2px rgba($destroy-btn-focus-shadow, .75), 0 1px 1px rgba(0, 0, 0, .15) }
+  }
+}
+
+.swal-button--cancel {
+  background-color: $quiet-base-btn-bg;
+  border-color: $quiet-base-btn-border;
+  color: $quiet-base-btn-text;
+
+  &:not([disabled]):hover { background-color: $quiet-btn-hover-bg }
+}

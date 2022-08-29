@@ -1,0 +1,36 @@
+.circle { border-radius: 100% }
+.disabled, [disabled] { cursor: not-allowed }
+.first-letter-lowercase:first-letter { text-transform: lowercase }
+.hide { display: none }
+.unstyled {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.overflow-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.makeRoomForTheActionBarOnMobile {
+  @include breakpoint(to-sm) {
+    padding-bottom: 72px;
+  }
+}
+
+.hide-nav-during-registration-process {
+  .Navigation {
+    display: none !important;
+  }
+}
+
+.col-grid-3 { grid-template-columns: repeat(3, 1fr) }
+.col-grid-4 { grid-template-columns: repeat(4, 1fr) }

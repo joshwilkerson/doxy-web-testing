@@ -1,0 +1,92 @@
+.react-datepicker {
+  background: var(--color-tint10);
+  border: 0;
+  padding: 2px;
+  box-shadow: 0 4px 8px rgba(17, 17, 17, 0.5);
+}
+
+.react-datepicker__month-container {
+  border-radius: 3px;
+  border: 1px solid var(--color-tint5);
+}
+
+.react-datepicker__header {
+  background: var(--color-tint8);
+  border-bottom-color: var(--color-tint5);
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header {
+  font-size: 0.875rem;
+  padding: 0 2rem;
+  color: var(--color-tint2);
+}
+
+.react-datepicker-time__header {
+  padding: 0;
+}
+
+.react-datepicker__day-names {
+  background: var(--color-tint8);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.react-datepicker__day-name {
+  color: var(--color-tint2);
+}
+
+.react-datepicker__navigation {
+  top: 15px;
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: var(--color-tint2);
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: var(--color-tint2);
+}
+
+.react-datepicker__day,
+.react-datepicker__time-list-item {
+  color: var(--color-tint2);
+}
+
+.react-datepicker__day--today,
+.react-datepicker__day--today:hover {
+  background-color: var(--color-tint7);
+  border-radius: 0.3em;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--keyboard-selected:hover {
+  background: var(--color-tint2);
+  border: 0;
+  color: var(--color-tint10);
+}
+
+// specific selectors, much?!
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item {
+  height: auto;
+}
+
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected,
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected:hover {
+  background: var(--color-tint2);
+}

@@ -1,0 +1,17 @@
+.badge {
+  background: var(--badge--background-color, var(--color-tint8));
+  border-radius: 4px;
+  display: inline-block;
+  color: var(--badge--color, var(--color-tint1));
+  font-size: 12px;
+  line-height: 1.5rem;
+  padding: 0 6px;
+  white-space: nowrap;
+
+  &.sm-badge,
+  &.xs-badge {
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 1.25rem;
+  }
+}

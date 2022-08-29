@@ -1,0 +1,64 @@
+.m-a{margin:auto}
+.mt-a{margin-top:auto}
+.mr-a{margin-right:auto}
+.mb-a{margin-bottom:auto}
+.ml-a{margin-left:auto}
+.t-a{top:auto}
+.r-a{right:auto}
+.b-a{bottom:auto}
+.l-a{left:auto}
+
+@include breakpoint(from-sm){ .m-a\@xs{margin:auto} }
+@include breakpoint(from-xs){ .mt-a\@xs{margin-top:auto} }
+@include breakpoint(from-xs){ .mr-a\@xs{margin-right:auto} }
+@include breakpoint(from-xs){ .mb-a\@xs{margin-bottom:auto} }
+@include breakpoint(from-xs){ .ml-a\@xs{margin-left:auto} }
+
+@include breakpoint(from-xs){ .t-a\@xs{top:auto} }
+@include breakpoint(from-xs){ .r-a\@xs{right:auto} }
+@include breakpoint(from-xs){ .b-a\@xs{bottom:auto} }
+@include breakpoint(from-xs){ .l-a\@xs{left:auto} }
+
+@include breakpoint(from-sm){ .m-a\@sm{margin:auto} }
+@include breakpoint(from-sm){ .mt-a\@sm{margin-top:auto} }
+@include breakpoint(from-sm){ .mr-a\@sm{margin-right:auto} }
+@include breakpoint(from-sm){ .mb-a\@sm{margin-bottom:auto} }
+@include breakpoint(from-sm){ .ml-a\@sm{margin-left:auto} }
+
+@include breakpoint(from-sm){ .t-a\@sm{top:auto} }
+@include breakpoint(from-sm){ .r-a\@sm{right:auto} }
+@include breakpoint(from-sm){ .b-a\@sm{bottom:auto} }
+@include breakpoint(from-sm){ .l-a\@sm{left:auto} }
+
+@include breakpoint(from-med){ .m-a\@md{margin:auto} }
+@include breakpoint(from-med){ .mt-a\@md{margin-top:auto} }
+@include breakpoint(from-med){ .mr-a\@md{margin-right:auto} }
+@include breakpoint(from-med){ .mb-a\@md{margin-bottom:auto} }
+@include breakpoint(from-med){ .ml-a\@md{margin-left:auto} }
+
+@include breakpoint(from-med){ .t-a\@md{top:auto} }
+@include breakpoint(from-med){ .r-a\@md{right:auto} }
+@include breakpoint(from-med){ .b-a\@md{bottom:auto} }
+@include breakpoint(from-med){ .l-a\@md{left:auto} }
+
+@include breakpoint(from-lg){ .m-a\@lg{margin:auto} }
+@include breakpoint(from-lg){ .mt-a\@lg{margin-top:auto} }
+@include breakpoint(from-lg){ .mr-a\@lg{margin-right:auto} }
+@include breakpoint(from-lg){ .mb-a\@lg{margin-bottom:auto} }
+@include breakpoint(from-lg){ .ml-a\@lg{margin-left:auto} }
+
+@include breakpoint(from-lg){ .t-a\@lg{top:auto} }
+@include breakpoint(from-lg){ .r-a\@lg{right:auto} }
+@include breakpoint(from-lg){ .b-a\@lg{bottom:auto} }
+@include breakpoint(from-lg){ .l-a\@lg{left:auto} }
+
+@include breakpoint(from-xl){ .m-a\@xl{margin:auto} }
+@include breakpoint(from-xl){ .mt-a\@xl{margin-top:auto} }
+@include breakpoint(from-xl){ .mr-a\@xl{margin-right:auto} }
+@include breakpoint(from-xl){ .mb-a\@xl{margin-bottom:auto} }
+@include breakpoint(from-xl){ .ml-a\@xl{margin-left:auto} }
+
+@include breakpoint(from-xl){ .t-a\@xl{top:auto} }
+@include breakpoint(from-xl){ .r-a\@xl{right:auto} }
+@include breakpoint(from-xl){ .b-a\@xl{bottom:auto} }
+@include breakpoint(from-xl){ .l-a\@xl{left:auto} }

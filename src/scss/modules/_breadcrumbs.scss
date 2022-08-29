@@ -1,0 +1,83 @@
+.breadcrumbs {
+  border-bottom: 1px solid var(--color-tint7);
+  padding: 0.5rem 1.5rem;
+
+  @include breakpoint(from-med) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.breadcrumbs__layout {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.breadcrumbs__page { 
+  color: var(--color-tint1);
+  margin-left: 2px;
+  padding-left: 0.5rem;
+
+  &:first-child { 
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &:not(.breadcrumbs__current-page) {
+    // on small screens, we want to show an icon for non-active pages in the breadcrumbs
+    // we'll hide the text and show the icon, and vice-versa on larger screens
+    .text {
+      @include breakpoint(to-sm) { display: none }
+    }
+    .icon { 
+      position: relative;
+      top: 2px;
+
+      @include breakpoint(from-sm) { display: none }
+    }
+  }
+}
+
+.breadcrumbs__current-page {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  .icon { display: none }
+}
+
+.breadcrumbs__divider-icon {
+  color: var(--color-tint3);
+  font-size: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 0.5rem;
+  position: relative;
+  top: 3px;
+}
+
+.breadcrumbs__menu { max-width: 240px }
+
+.breadcrumbs__btn.select {
+  background-color: transparent;
+  background-position: calc(100% - 12px) 17px;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 184px;
+  overflow: hidden;
+  padding: 0 33px 0 0.5rem !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: auto;
+
+  @media (min-width: 368px) { max-width: 240px }
+  @include breakpoint(from-sm) { max-width: none }
+}

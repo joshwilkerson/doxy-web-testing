@@ -1,0 +1,53 @@
+.radio { 
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+}
+.radio-label { 
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  padding: 0 0 0 24px;
+  position: relative;
+
+  &:before, &:after {
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+  }
+
+  &:before {
+    box-shadow: inset 0 0 0 1px var(--color-tint4), inset 0 1px 0 var(--color-tint4);
+    height: 16px;
+    left: 0;
+    top: 4px;
+    width: 16px;
+  }
+
+  &:after {
+    background-color: transparent;
+    height: 8px;
+    left: 4px;
+    top: 8px;
+    transition: background-color 0.2s;
+    width: 8px;
+  }
+
+  &.sm-radio-label {
+    font-size: 14px;
+
+    &:before { top: 3px }
+    &:after { top: 7px }
+  }
+}
+
+.radio:checked + .radio-label:before { background-color: var(--color-emerald); box-shadow: none; }
+.radio:checked + .radio-label:after { background-color: var(--color-tint10); }
+
+/* Disabled */
+.radio[disabled] + .radio-label { color: var(--color-tint3); cursor: not-allowed; }
+.radio:checked[disabled] + .radio-label:before { background-color: var(--color-tint5) }
+
+/* Focus */
+.radio:focus-visible + .radio-label::before { @include focus-outline }

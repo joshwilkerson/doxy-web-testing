@@ -1,0 +1,23 @@
+.sub-navigation {
+  width: 12rem;
+}
+.sub-navigation__link {
+  color: var(--color-tint1);
+  display: block;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.2s;
+  border-radius: 4px;
+}
+
+.sub-navigation__link:hover {
+  color: var(--color-tint0);
+}
+
+.sub-navigation__link.is-active-link {
+  @include breakpoint(from-med) {
+    background: var(--color-tint7);    
+    color: var(--color-tourmaline);
+    font-weight: 500;
+  }
+}

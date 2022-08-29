@@ -1,0 +1,21 @@
+.prepend-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .label {
+    align-items: center;
+    background: var(--color-tint6);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    padding: 12px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  input.label-container { padding-left: 56px }
+}

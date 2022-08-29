@@ -1,0 +1,26 @@
+.flexed-items-with-ellipsis {
+  display: flex;
+  justify-content: space-between;
+
+  .flexed-item {
+    &:first-child { order: 1 }
+    &:last-child { order: 3 }
+  }
+
+  &:after {
+    content: "";
+    flex-grow: 1;
+    order: 2;
+    background: radial-gradient(
+      circle at center,
+      var(--color-tint2),
+      transparent 15%
+    );
+    background-size: 8px 12px;
+    background-position: 0 8px;
+    background-repeat: repeat-x;
+    margin: 0 4px;
+    position: relative;
+    top: 3px;
+  }
+}
