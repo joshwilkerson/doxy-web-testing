@@ -1,8 +1,9 @@
 {
-  "name": "doxy-web-testing",
-  "version": "2.0.0",
+  "name": "@joshwilkerson/doxy-web",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
