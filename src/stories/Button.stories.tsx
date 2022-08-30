@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { Button, ButtonProps } from '../components/Button';
 
 export default {
-  title: 'Button/Button',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
     variant: { 
