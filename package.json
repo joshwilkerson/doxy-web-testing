@@ -60,6 +60,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
+    "@reach/menu-button": "^0.17.0",
     "css-loader": "5.2.6"
   }
 }
