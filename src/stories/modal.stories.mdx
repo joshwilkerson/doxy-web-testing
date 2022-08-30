@@ -1,0 +1,82 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+
+<Meta title="Modals" />
+
+## Modal
+
+<Preview>
+  <Story name="Modal">
+    <>
+      <ColorSchemeWrapper scheme="light">
+        <div className="modal--open">
+          <div className="modal-layer" style={{position: "relative", background: "none", padding: "2rem"}}>
+            <div className="modal" style={{marginTop: 0}}>
+              <div className="modal__header">
+                <div className="modal-title">Modal title</div>
+              </div>
+              <div className="modal__body">
+                This is the modal body content.
+              </div>
+              <div className="modal__footer">
+                <div style={{textAlign: "right"}}>
+                  <button className="compact-btn btn">Do a small thing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ColorSchemeWrapper>
+      <ColorSchemeWrapper scheme="dark">
+        <div className="modal--open">
+          <div className="modal-layer" style={{position: "relative", background: "none", padding: "2rem"}}>
+            <div className="modal" style={{marginTop: 0}}>
+              <div className="modal__header">
+                <div className="modal-title">Modal title</div>
+              </div>
+              <div className="modal__body">
+                This is the modal body content.
+              </div>
+              <div className="modal__footer">
+                <div style={{textAlign: "right"}}>
+                  <button className="compact-btn btn">Do a small thing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ColorSchemeWrapper>
+    </>
+  </Story>
+</Preview>
+
+| Modal elements |  |
+| ---- | ---- |
+| base element | <code>.modal</code> |
+| header | <code>.modal__header</code> |
+| title | <code>.modal-title</code> |
+| body | <code>.modal__body</code> |
+
+| Modal control |
+| ---- |
+| modal is hidden by default; will be visible when a parent class name of <code>.modal--open</code> is present. |
+| <code>.modal-layer</code> should wrap <code>.modal</code> in order for the modal to have the appearance of sitting above the page. |
+
+### Modal markup structure
+```html
+<body class="modal--open">
+    <div class="modal-layer">
+        <div className="modal">
+            <div className="modal__header">
+                <div className="modal-title">...</div>
+            </div>
+            <div className="modal__body">
+                ...
+            </div>
+            <div className="modal__footer">
+                ...
+            </div>
+        </div>
+    </div>
+</body>
+```

@@ -1,0 +1,127 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { downCaret, rightChevron } from "@planningcenter/icons/paths/general";
+import { threeDots } from "@planningcenter/icons/paths/church-center";
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+
+<Meta title="Breadcrumbs" />
+
+export function Icon({ desc, name, path, title, style, ...props }) {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      role="img"
+      style={{
+        display: "inline-block",
+        verticalAlign: "text-top",
+        height: "1em",
+        width: "1em",
+        fontSize: "1em",
+        ...style,
+      }}
+      {...props}
+    >
+      <title>{title}</title>
+      <desc>{desc}</desc>
+      <path d={path} fill="currentColor" />
+    </svg>
+  );
+}
+
+## Breadcrumbs
+
+<Preview>
+  <Story name="Breadcrumbs">
+    <>
+      <ColorSchemeWrapper scheme="light">
+        <nav aria-label="Breadcrumb" className="breadcrumbs">
+          <div className="breadcrumbs__layout">
+            <a className="breadcrumbs__page" aria-label="Parent Page Name" href="">
+              <span className="text">Parent Page Name</span>
+              <span className="icon">
+                <Icon
+                title="three dots"
+                desc="three dots indicating more options"
+                path={threeDots}
+              />
+              </span>
+            </a>
+            <span className="breadcrumbs__divider-icon">
+              <Icon
+                title="right chevron"
+                desc="chevron pointing right"
+                path={rightChevron}
+              />
+            </span>
+            <div className="breadcrumbs__page breadcrumbs__current-page" aria-current="location">
+              Page Name
+            </div>
+          </div>
+        </nav>
+      </ColorSchemeWrapper>
+      <ColorSchemeWrapper scheme="dark">
+        <nav aria-label="Breadcrumb" className="breadcrumbs">
+          <div className="breadcrumbs__layout">
+            <a className="breadcrumbs__page" aria-label="Parent Page Name" href="">
+              <span className="text">Parent Page Name</span>
+              <span className="icon">
+                <Icon
+                title="three dots"
+                desc="three dots indicating more options"
+                path={threeDots}
+              />
+              </span>
+            </a>
+            <span className="breadcrumbs__divider-icon">
+              <Icon
+                title="right chevron"
+                desc="chevron pointing right"
+                path={rightChevron}
+              />
+            </span>
+            <div className="breadcrumbs__page breadcrumbs__current-page" aria-current="location">
+              Page Name
+            </div>
+          </div>
+        </nav>
+      </ColorSchemeWrapper>
+    </>
+  </Story>
+</Preview>
+
+| Breadcrumbs elements |    |
+| ---- | ---- |
+| base element | <code>.breadcrumbs</code> |
+| layout container (provides flex container with height and max width) | <code>.breadcrumbs__layout</code> |
+| page link | <code>.breadcrumbs__page</code> |
+| active page class (appended) | <code>.breadcrumbs__current-page</code> |
+| link text | <code>.text</code> |
+| link icon | <code>.icon</code> (link icon is only shown on mobile screens, and replaces the text link) |
+| divider icon | <code>.breadcrumbs__divider-icon</code> |
+
+### Usage
+```html
+<nav aria-label="Breadcrumb" className="breadcrumbs">
+  <div className="breadcrumbs__layout">
+    <a className="breadcrumbs__page" aria-label="Parent Page Name" href="">
+      <span className="text">Parent Page Name</span>
+      <span className="icon">
+        <Icon
+        title="three dots"
+        desc="three dots indicating more options"
+        path={threeDots}
+      />
+      </span>
+    </a>
+    <span className="breadcrumbs__divider-icon">
+      <Icon
+        title="right chevron"
+        desc="chevron pointing right"
+        path={rightChevron}
+      />
+    </span>
+    <div className="breadcrumbs__page breadcrumbs__current-page" aria-current="location">
+      Page Name
+    </div>
+  </div>
+</nav>
+```

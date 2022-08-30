@@ -1,0 +1,40 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+
+<Meta title="Heading" />
+
+## Heading
+
+<Preview>
+  <Story name="Heading">
+    <div
+      data-color-scheme="light"
+      data-contrast="low"
+    >
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+    </div>
+  </Story>
+</Preview>
+
+To meet accessibility standards, every page should have an `<h1>...</h1>`, and other headings should be used in the correct order:
+
+```html
+<h1>Page or Section title</h1>
+<h2>Section subtitle</h2>
+<h3>A tertiary title</h3>
+```
+
+ Heading tags have default styles without the need for css class names. However, we may not always want our heading tags to have their default style. For example, we might have an `<h2>Section title</h2>` but want it to have `<h3>` styles. In these cases, we can use the css classes for the heading level style you desire. 
+
+| Heading classes |  |
+| ---- | ---- |
+| Options | <code>.h1</code> <code>.h2</code> <code>.h3</code> <code>.h4</code> <code>.h5</code>  |
+
+### Usage
+```html
+<h1>I'm a level 1 heading with level 1 heading styles</h1>
+<h1 class="h3">I'm a level 1 heading with level 3 heading styles</h1>
+```

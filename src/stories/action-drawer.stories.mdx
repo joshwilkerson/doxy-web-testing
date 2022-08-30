@@ -1,0 +1,57 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper"
+
+
+<Meta title="Action Drawer" />
+
+## Action Drawer
+
+<Preview>
+  <Story name="Action Drawer">
+    <>
+      <ColorSchemeWrapper scheme="light">
+        <div className="action-drawer">
+          <p>Action drawers are padded, rounded containers for diferentiating content.</p>
+          <h4 className="mb-1">What can you put in an action drawer?</h4>
+          <ul>
+            <li>You can put lists here</li>
+            <li>You can put images here, too</li>
+            <li>You can put pretty much anything here</li>
+          </ul>
+          <div className="action-drawer__footer" style={{textAlign: "right"}}>
+            <button className="minor-btn secondary-btn btn">+ Add something</button>
+          </div>
+        </div>
+      </ColorSchemeWrapper>
+      <ColorSchemeWrapper scheme="dark">
+        <div className="action-drawer">
+          Action drawers are padded, rounded containers for diferentiating content.
+          <h4 className="mb-1">What can you put in an action drawer?</h4>
+          <ul>
+            <li>You can put lists here</li>
+            <li>You can put images here, too</li>
+            <li>You can put pretty much anything here</li>
+          </ul>
+          <div className="action-drawer__footer" style={{textAlign: "right"}}>
+            <button className="minor-btn secondary-btn btn">+ Add something</button>
+          </div>
+        </div>
+      </ColorSchemeWrapper>
+    </>
+  </Story>
+</Preview>
+
+| Action drawer classes |  |
+| ---- | ---- |
+| base element | <code>.action-drawer</code> |
+| footer (optional) | <code>.action-drawer__footer</code> |
+
+
+### Usage
+```html
+<div class="action-drawer">
+   Put some content here.
+   
+   <div class="action-drawer__footer">An optional footer</div>
+</div>
+```
