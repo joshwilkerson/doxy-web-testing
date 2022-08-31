@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-js": "rollup -c"
+    "build-js": "rollup -c",
+    "eslint": "eslint --fix",
+    "prettier": "prettier src --write"
   },
   "repository": {
     "type": "git",
@@ -42,8 +44,17 @@
     "@types/react": "^18.0.17",
     "autoprefixer": "^10.4.8",
     "babel-loader": "^8.2.5",
+    "css-loader": "5.2.6",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.0.0",
     "minions.css": "^0.3.2",
     "postcss": "^8.4.16",
+    "prettier": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.78.1",
@@ -60,7 +71,6 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@reach/menu-button": "^0.17.0",
-    "css-loader": "5.2.6"
+    "@reach/menu-button": "^0.17.0"
   }
 }
