@@ -1,7 +1,7 @@
-import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
-import { downCaret, rightChevron } from "@planningcenter/icons/paths/general";
-import { threeDots } from "@planningcenter/icons/paths/church-center";
-import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"
+import { downCaret, rightChevron } from "@planningcenter/icons/paths/general"
+import { threeDots } from "@planningcenter/icons/paths/church-center"
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper"
 
 <Meta title="Legacy/Breadcrumbs" />
 
@@ -24,7 +24,7 @@ export function Icon({ desc, name, path, title, style, ...props }) {
       <desc>{desc}</desc>
       <path d={path} fill="currentColor" />
     </svg>
-  );
+  )
 }
 
 ## Breadcrumbs
@@ -35,14 +35,18 @@ export function Icon({ desc, name, path, title, style, ...props }) {
       <ColorSchemeWrapper scheme="light">
         <nav aria-label="Breadcrumb" className="breadcrumbs">
           <div className="breadcrumbs__layout">
-            <a className="breadcrumbs__page" aria-label="Parent Page Name" href="">
+            <a
+              className="breadcrumbs__page"
+              aria-label="Parent Page Name"
+              href=""
+            >
               <span className="text">Parent Page Name</span>
               <span className="icon">
                 <Icon
-                title="three dots"
-                desc="three dots indicating more options"
-                path={threeDots}
-              />
+                  title="three dots"
+                  desc="three dots indicating more options"
+                  path={threeDots}
+                />
               </span>
             </a>
             <span className="breadcrumbs__divider-icon">
@@ -52,7 +56,10 @@ export function Icon({ desc, name, path, title, style, ...props }) {
                 path={rightChevron}
               />
             </span>
-            <div className="breadcrumbs__page breadcrumbs__current-page" aria-current="location">
+            <div
+              className="breadcrumbs__page breadcrumbs__current-page"
+              aria-current="location"
+            >
               Page Name
             </div>
           </div>
@@ -61,14 +68,18 @@ export function Icon({ desc, name, path, title, style, ...props }) {
       <ColorSchemeWrapper scheme="dark">
         <nav aria-label="Breadcrumb" className="breadcrumbs">
           <div className="breadcrumbs__layout">
-            <a className="breadcrumbs__page" aria-label="Parent Page Name" href="">
+            <a
+              className="breadcrumbs__page"
+              aria-label="Parent Page Name"
+              href=""
+            >
               <span className="text">Parent Page Name</span>
               <span className="icon">
                 <Icon
-                title="three dots"
-                desc="three dots indicating more options"
-                path={threeDots}
-              />
+                  title="three dots"
+                  desc="three dots indicating more options"
+                  path={threeDots}
+                />
               </span>
             </a>
             <span className="breadcrumbs__divider-icon">
@@ -78,7 +89,10 @@ export function Icon({ desc, name, path, title, style, ...props }) {
                 path={rightChevron}
               />
             </span>
-            <div className="breadcrumbs__page breadcrumbs__current-page" aria-current="location">
+            <div
+              className="breadcrumbs__page breadcrumbs__current-page"
+              aria-current="location"
+            >
               Page Name
             </div>
           </div>
@@ -88,6 +102,7 @@ export function Icon({ desc, name, path, title, style, ...props }) {
   </Story>
 </Preview>
 
+<!-- prettier-ignore -->
 | Breadcrumbs elements |    |
 | ---- | ---- |
 | base element | <code>.breadcrumbs</code> |
@@ -99,6 +114,7 @@ export function Icon({ desc, name, path, title, style, ...props }) {
 | divider icon | <code>.breadcrumbs__divider-icon</code> |
 
 ### Usage
+
 ```html
 <nav aria-label="Breadcrumb" className="breadcrumbs">
   <div className="breadcrumbs__layout">

@@ -1,9 +1,10 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper"
 
 <Meta title="Legacy/Forms" />
 
 ## Select
+
 <Preview>
   <Story name="Select">
     <>
@@ -26,10 +27,11 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
 </Preview>
 
 ### Sizes
+
 <Preview>
   <Story name="Select Sizes">
     <ColorSchemeWrapper scheme="light" showLabel={false}>
-      <div style={{display: "flex", gap: "1rem"}}>
+      <div style={{ display: "flex", gap: "1rem" }}>
         <select name="get-it" className="select">
           <option value="1">Normal select</option>
           <option value="2">That one</option>
@@ -45,12 +47,14 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
   </Story>
 </Preview>
 
+<!-- prettier-ignore -->
 | Select classes |  |
 | ---- | ---- |
 | Base | <code>.select</code> | 
 | Size (appended) | <code>.sm-select</code> |
 
 ### Usage
+
 ```html
 <select name="tha-options" className="select">
   <option value="1">Options 1</option>
@@ -66,58 +70,90 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
     <>
       <ColorSchemeWrapper scheme="light">
         <label htmlFor="the-input">Name</label>
-        <input type="text" className="text-input" name="the-input" id="the-input" placeholder="Enter your name" />
+        <input
+          type="text"
+          className="text-input"
+          name="the-input"
+          id="the-input"
+          placeholder="Enter your name"
+        />
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
         <label htmlFor="the-dark-input">Name</label>
-        <input type="text" className="text-input" name="the-input" id="the-dark-input" placeholder="Enter your name" />
+        <input
+          type="text"
+          className="text-input"
+          name="the-input"
+          id="the-dark-input"
+          placeholder="Enter your name"
+        />
       </ColorSchemeWrapper>
     </>
   </Story>
 </Preview>
 
 ### Sizes
+
 <Preview>
   <Story name="Text Input Sizes">
     <ColorSchemeWrapper scheme="light" showLabel={false}>
-      <div style={{display: "flex", gap: "1rem"}}>
+      <div style={{ display: "flex", gap: "1rem" }}>
         <div>
           <label htmlFor="the-first-input">Name</label>
-          <input type="text" className="text-input" name="the-first-input" id="the-first-input" placeholder="Enter your name" />
+          <input
+            type="text"
+            className="text-input"
+            name="the-first-input"
+            id="the-first-input"
+            placeholder="Enter your name"
+          />
         </div>
         <div>
           <label htmlFor="the-small-input">Name</label>
-          <input type="text" name="the-small-input" id="the-small-input" className="text-input sm-input" placeholder="Enter your name" />
+          <input
+            type="text"
+            name="the-small-input"
+            id="the-small-input"
+            className="text-input sm-input"
+            placeholder="Enter your name"
+          />
         </div>
       </div>
     </ColorSchemeWrapper>
   </Story>
 </Preview>
 
-| Text Input classes |  |
-| ---- | ---- |
-| Base | n/a | 
-| Size | <code>.sm-input</code> |
+| Text Input classes |                        |
+| ------------------ | ---------------------- |
+| Base               | n/a                    |
+| Size               | <code>.sm-input</code> |
 
 ### Usage
+
 ```html
 <label for="the-input">Name</label>
 <input type="text" className="text-input" name="the-input" id="the-input" placeholder="Enter your name" />
 ```
 
 ### Prepended Labels
+
 <Preview>
   <Story name="Prepended Labels">
     <ColorSchemeWrapper scheme="light" showLabel={false}>
       <div className="prepend-label">
         <div className="label">$</div>
-        <input className="text-input label-container" type="text" placeholder="enter an amount to give" />
+        <input
+          className="text-input label-container"
+          type="text"
+          placeholder="enter an amount to give"
+        />
       </div>
     </ColorSchemeWrapper>
   </Story>
 </Preview>
 
 ### Usage
+
 ```html
 <div className="prepend-label">
   <div className="label">$</div>
@@ -143,100 +179,164 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
 </Preview>
 
 ### Usage
+
 ```html
 <label htmlFor="the-textarea">Enter your message</label>
 <textarea name="the-textarea" />
 ```
 
 ## Checkbox
+
 <Preview>
   <Story name="Checkbox">
     <>
       <ColorSchemeWrapper scheme="light">
-        <input type="checkbox" className="checkbox" name="first-checkbox" id="first-checkbox" />
-        <label htmlFor="first-checkbox" className="checkbox-label">Pickles</label>
+        <input
+          type="checkbox"
+          className="checkbox"
+          name="first-checkbox"
+          id="first-checkbox"
+        />
+        <label htmlFor="first-checkbox" className="checkbox-label">
+          Pickles
+        </label>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
-        <input type="checkbox" className="checkbox" name="dark-checkbox" id="dark-checkbox" />
-        <label htmlFor="dark-checkbox" className="checkbox-label">Pickles</label>
+        <input
+          type="checkbox"
+          className="checkbox"
+          name="dark-checkbox"
+          id="dark-checkbox"
+        />
+        <label htmlFor="dark-checkbox" className="checkbox-label">
+          Pickles
+        </label>
       </ColorSchemeWrapper>
     </>
   </Story>
 </Preview>
 
 ### Sizes
+
 <Preview>
   <Story name="Checkbox Sizes">
     <ColorSchemeWrapper scheme="light" showLabel={false}>
-      <div style={{display: "flex", gap: "1rem"}}>
+      <div style={{ display: "flex", gap: "1rem" }}>
         <div>
-          <input type="checkbox" className="checkbox" name="second-checkbox" id="second-checkbox" />
-          <label htmlFor="second-checkbox" className="checkbox-label">Pickles</label>
+          <input
+            type="checkbox"
+            className="checkbox"
+            name="second-checkbox"
+            id="second-checkbox"
+          />
+          <label htmlFor="second-checkbox" className="checkbox-label">
+            Pickles
+          </label>
         </div>
         <div>
-          <input type="checkbox" className="large-checkbox checkbox" name="large-checkbox" id="large-checkbox" />
-          <label htmlFor="large-checkbox" className="large-checkbox-label checkbox-label">Pickles</label>
+          <input
+            type="checkbox"
+            className="large-checkbox checkbox"
+            name="large-checkbox"
+            id="large-checkbox"
+          />
+          <label
+            htmlFor="large-checkbox"
+            className="large-checkbox-label checkbox-label"
+          >
+            Pickles
+          </label>
         </div>
       </div>
     </ColorSchemeWrapper>
   </Story>
 </Preview>
 
-| Checkbox classes |  |
-| ---- | ---- |
-| Input | <code>.checkbox</code> | 
-| Label | <code>.checkbox-label</code> (the label should always follow the input)|
-| Large checkbox (appended) | <code>.large-checkbox</code> |
-| Large label (appended) | <code>.large-checkbox-label</code> |
+| Checkbox classes          |                                                                         |
+| ------------------------- | ----------------------------------------------------------------------- |
+| Input                     | <code>.checkbox</code>                                                  |
+| Label                     | <code>.checkbox-label</code> (the label should always follow the input) |
+| Large checkbox (appended) | <code>.large-checkbox</code>                                            |
+| Large label (appended)    | <code>.large-checkbox-label</code>                                      |
 
 ### Usage
+
 ```html
 <input type="checkbox" className="checkbox" name="tha-checkbox" id="tha-checkbox" />
 <label htmlFor="tha-checkbox" className="checkbox-label">Pickles</label>
 ```
 
 ## Radio button
+
 <Preview>
   <Story name="Radio button">
     <>
       <ColorSchemeWrapper scheme="light">
         <div className="mb-1">
           <input type="radio" className="radio" name="radios" id="radio-1" />
-          <label htmlFor="radio-1" className="radio-label">Pickles</label>
+          <label htmlFor="radio-1" className="radio-label">
+            Pickles
+          </label>
         </div>
         <div className="mb-1">
           <input type="radio" className="radio" name="radios" id="radio-2" />
-          <label htmlFor="radio-2" className="radio-label">Carrots</label>
+          <label htmlFor="radio-2" className="radio-label">
+            Carrots
+          </label>
         </div>
         <div className="mb-1">
           <input type="radio" className="radio" name="radios" id="radio-3" />
-          <label htmlFor="radio-3" className="radio-label">Chips</label>
+          <label htmlFor="radio-3" className="radio-label">
+            Chips
+          </label>
         </div>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
         <div className="mb-1">
-          <input type="radio" className="radio" name="radiosdark" id="radio-dark-1" />
-          <label htmlFor="radio-dark-1" className="radio-label">Pickles</label>
+          <input
+            type="radio"
+            className="radio"
+            name="radiosdark"
+            id="radio-dark-1"
+          />
+          <label htmlFor="radio-dark-1" className="radio-label">
+            Pickles
+          </label>
         </div>
         <div className="mb-1">
-          <input type="radio" className="radio" name="radiosdark" id="radio-dark-2" />
-          <label htmlFor="radio-dark-2" className="radio-label">Carrots</label>
+          <input
+            type="radio"
+            className="radio"
+            name="radiosdark"
+            id="radio-dark-2"
+          />
+          <label htmlFor="radio-dark-2" className="radio-label">
+            Carrots
+          </label>
         </div>
         <div className="mb-1">
-          <input type="radio" className="radio" name="radiosdark" id="radio-dark-3" />
-          <label htmlFor="radio-dark-3" className="radio-label">Chips</label>
+          <input
+            type="radio"
+            className="radio"
+            name="radiosdark"
+            id="radio-dark-3"
+          />
+          <label htmlFor="radio-dark-3" className="radio-label">
+            Chips
+          </label>
         </div>
       </ColorSchemeWrapper>
     </>
   </Story>
 </Preview>
 
-| Radio button classes |  |
-| ---- | ---- |
-| Input | <code>.radio</code> | 
-| Label | <code>.radio-label</code> (the label should always follow the input)|
+| Radio button classes |                                                                      |
+| -------------------- | -------------------------------------------------------------------- |
+| Input                | <code>.radio</code>                                                  |
+| Label                | <code>.radio-label</code> (the label should always follow the input) |
 
 ### Usage
+
 ```html
 <div className="mb-1">
   <input type="radio" className="radio" name="radios" id="radio-1" />
@@ -255,62 +355,83 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
     <>
       <ColorSchemeWrapper scheme="light">
         <div className="number-spinner">
-          <button className="number-spinner__btn" aria-label="decrement input value">-</button>
-          <input 
-            type="text" 
-            className="number-spinner__input" 
-            name="the-numbers" 
-            id="the-numbers" 
-            placeholder="0" 
-            min="1" 
-            max="24" 
-            step="1" 
+          <button
+            className="number-spinner__btn"
+            aria-label="decrement input value"
+          >
+            -
+          </button>
+          <input
+            type="text"
+            className="number-spinner__input"
+            name="the-numbers"
+            id="the-numbers"
+            placeholder="0"
+            min="1"
+            max="24"
+            step="1"
           />
-          <button className="number-spinner__btn" aria-label="increment input value">+</button>
+          <button
+            className="number-spinner__btn"
+            aria-label="increment input value"
+          >
+            +
+          </button>
         </div>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
         <div className="number-spinner">
-          <button className="number-spinner__btn" aria-label="decrement input value">-</button>
-          <input 
-            type="text" 
-            className="number-spinner__input" 
-            name="the-dark-numbers" 
-            id="the-dark-numbers" 
-            placeholder="0" 
-            min="1" 
-            max="24" 
-            step="1" 
+          <button
+            className="number-spinner__btn"
+            aria-label="decrement input value"
+          >
+            -
+          </button>
+          <input
+            type="text"
+            className="number-spinner__input"
+            name="the-dark-numbers"
+            id="the-dark-numbers"
+            placeholder="0"
+            min="1"
+            max="24"
+            step="1"
           />
-          <button className="number-spinner__btn" aria-label="increment input value">+</button>
+          <button
+            className="number-spinner__btn"
+            aria-label="increment input value"
+          >
+            +
+          </button>
         </div>
       </ColorSchemeWrapper>
     </>
   </Story>
 </Preview>
 
-
-| Number Input classes |  |
-| ---- | ---- |
-| Wrapper | <code>.number-spinner</code> | 
-| Input | <code>.number-spinner__input</code> | 
-| Buttons | <code>.number-spinner__btn</code> | 
-| Size | <code>.sm-number-spinner</code> |
+| Number Input classes |                                       |
+| -------------------- | ------------------------------------- |
+| Wrapper              | <code>.number-spinner</code>          |
+| Input                | <code>.number-spinner\_\_input</code> |
+| Buttons              | <code>.number-spinner\_\_btn</code>   |
+| Size                 | <code>.sm-number-spinner</code>       |
 
 ### Usage
-*Note: you'll have to hook up your own js to make the buttons increment and decrement, set your step, min, and max values, etc.*
+
+_Note: you'll have to hook up your own js to make the buttons increment and decrement, set your step, min, and max values, etc._
+
 ```html
 <div className="number-spinner">
   <button className="number-spinner__btn" aria-label="decrement input value">-</button>
-  <input 
-    type="text" 
-    className="number-spinner__input" 
-    name="the-numbers" 
-    id="the-numbers" 
-    placeholder="0" 
-    min="1" 
-    max="24" 
-    step="1" 
+  <input
+    type="text"
+    className="number-spinner__input"
+    name="the-numbers"
+    id="the-numbers"
+    placeholder="0"
+    min="1"
+    max="24"
+    step="1"
   />
   <button className="number-spinner__btn" aria-label="increment input value">+</button>
 </div>
