@@ -1,30 +1,41 @@
 {
   "name": "@joshwilkerson/doxy-web",
-  "version": "1.1.0",
-  "description": "",
+  "version": "2.0.0-alpha.0",
+  "description": "Doxy for Church Center Web",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "build-js": "rollup -c",
-    "eslint": "eslint --fix",
-    "prettier": "prettier src --write"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshwilkerson/doxy-web-testing.git"
+    "url": "git+https://github.com/ministrycentered/doxy-web.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joshwilkerson/doxy-web-testing/issues"
+  "author": "Josh Wilkerson <jgwilkerson@gmail.com>",
+  "license": "MIT",
+  "homepage": "http://ministrycentered.github.io/doxy-web",
+  "np": {
+    "tests": false,
+    "releaseDraft": true
   },
-  "homepage": "https://github.com/joshwilkerson/doxy-web-testing#readme",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "storybook": "start-storybook -p 3000",
+    "build-storybook": "build-storybook",
+    "build-js": "rollup -c",
+    "watch": "rollup -c -w",
+    "eslint": "eslint --fix",
+    "prettier": "prettier src --write"
+  },
   "devDependencies": {
     "@babel/core": "^7.18.13",
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.18.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+    "@babel/preset-env": "^7.18.10",
     "@babel/preset-react": "^7.18.6",
     "@churchcenter/preformatted-content": "^0.0.11",
     "@planningcenter/font-size": "^0.0.1-2",
@@ -52,7 +63,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.0.0",
+    "gh-pages": "^4.0.0",
     "minions.css": "^0.3.2",
+    "np": "^7.6.2",
     "postcss": "^8.4.16",
     "prettier": "^2.3.2",
     "react": "^18.2.0",
@@ -72,5 +85,11 @@
   },
   "dependencies": {
     "@reach/menu-button": "^0.17.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
