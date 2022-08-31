@@ -21,10 +21,19 @@ export const Button: React.FC<ButtonProps> = ({
   disabled = false,
   ...props
 }) => {
+  const getVariantClass = () => {
+    if (variant == "naked") {
+      return "naked-btn"
+    } else if (variant == "outline") {
+      return "secondary-btn"
+    } else {
+      return "primary-btn"
+    }
+  }
   return (
     <button
       type="button"
-      className={["btn", `${size}-btn`, `${variant}-btn`].join(" ")}
+      className={["btn", `${size}-btn`, `${getVariantClass()}`].join(" ")}
       disabled={disabled}
       {...props}
     >
