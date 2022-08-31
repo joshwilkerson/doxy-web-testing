@@ -1,5 +1,5 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper"
 
 <Meta title="Legacy/Alert" />
 
@@ -9,42 +9,28 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
   <Story name="Alert">
     <>
       <ColorSchemeWrapper scheme="light">
-        <div className="alert">
-          A basic alert.
-        </div>
-        <div className="quiet-alert alert">
-          A quiet basic alert.
-        </div>
-        <div className="loud-alert alert">
-          A loud basic alert.
-        </div>
+        <div className="alert">A basic alert.</div>
+        <div className="quiet-alert alert">A quiet basic alert.</div>
+        <div className="loud-alert alert">A loud basic alert.</div>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
-        <div className="alert">
-          A basic alert.
-        </div>
-        <div className="quiet-alert alert">
-          A quiet basic alert.
-        </div>
-        <div className="loud-alert alert">
-          A loud basic alert.
-        </div>
+        <div className="alert">A basic alert.</div>
+        <div className="quiet-alert alert">A quiet basic alert.</div>
+        <div className="loud-alert alert">A loud basic alert.</div>
       </ColorSchemeWrapper>
     </>
   </Story>
 </Preview>
 
-
 ## Alert Types
 
 ### Info Alert
+
 <Preview>
   <Story name="Info Alert">
     <>
       <ColorSchemeWrapper scheme="light">
-        <div className="info-alert alert">
-          An information alert.
-        </div>
+        <div className="info-alert alert">An information alert.</div>
         <div className="quiet-alert info-alert alert">
           A quiet information alert.
         </div>
@@ -53,9 +39,7 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
         </div>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
-        <div className="info-alert alert">
-          An information alert.
-        </div>
+        <div className="info-alert alert">An information alert.</div>
         <div className="quiet-alert info-alert alert">
           A quiet information alert.
         </div>
@@ -68,13 +52,12 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
 </Preview>
 
 ### Success Alert
+
 <Preview>
   <Story name="Success Alert">
     <>
       <ColorSchemeWrapper scheme="light">
-        <div className="success-alert alert">
-          A success alert.
-        </div>
+        <div className="success-alert alert">A success alert.</div>
         <div className="quiet-alert success-alert alert">
           A quiet success alert.
         </div>
@@ -83,9 +66,7 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
         </div>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
-        <div className="success-alert alert">
-          A success alert.
-        </div>
+        <div className="success-alert alert">A success alert.</div>
         <div className="quiet-alert success-alert alert">
           A quiet success alert.
         </div>
@@ -98,13 +79,12 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
 </Preview>
 
 ### Warning Alert
+
 <Preview>
   <Story name="Warning Alert">
     <>
       <ColorSchemeWrapper scheme="light">
-        <div className="warning-alert alert">
-          A warning alert.
-        </div>
+        <div className="warning-alert alert">A warning alert.</div>
         <div className="quiet-alert warning-alert alert">
           A quiet warning alert.
         </div>
@@ -113,9 +93,7 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
         </div>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
-        <div className="warning-alert alert">
-          A warning alert.
-        </div>
+        <div className="warning-alert alert">A warning alert.</div>
         <div className="quiet-alert warning-alert alert">
           A quiet warning alert.
         </div>
@@ -128,51 +106,39 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
 </Preview>
 
 ### Error Alert
+
 <Preview>
   <Story name="Error Alert">
     <>
       <ColorSchemeWrapper scheme="light">
-        <div className="error-alert alert">
-          An error alert.
-        </div>
+        <div className="error-alert alert">An error alert.</div>
         <div className="quiet-alert error-alert alert">
           A quiet error alert.
         </div>
-        <div className="loud-alert error-alert alert">
-          A loud error alert.
-        </div>
+        <div className="loud-alert error-alert alert">A loud error alert.</div>
       </ColorSchemeWrapper>
       <ColorSchemeWrapper scheme="dark">
-        <div className="error-alert alert">
-          An error alert.
-        </div>
+        <div className="error-alert alert">An error alert.</div>
         <div className="quiet-alert error-alert alert">
           A quiet error alert.
         </div>
-        <div className="loud-alert error-alert alert">
-          A loud error alert.
-        </div>
+        <div className="loud-alert error-alert alert">A loud error alert.</div>
       </ColorSchemeWrapper>
     </>
   </Story>
 </Preview>
 
-
 ### Sizes
 
 <Preview>
   <Story name="Alert Sizes">
-    <div
-        data-color-scheme="light"
-        data-contrast="low"
-      >
-      <div className="sm-alert alert">
-        Size: small
-      </div>
+    <div data-color-scheme="light" data-contrast="low">
+      <div className="sm-alert alert">Size: small</div>
     </div>
   </Story>
 </Preview>
 
+<!-- prettier-ignore -->
 | Alert classes |  |
 | ---- | ---- |
 | Base | <code>.alert</code> | 
@@ -181,6 +147,7 @@ import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
 | Size (appended) | <code>.sm-alert</code> |
 
 ### Usage
+
 ```html
 <div class="quiet-alert success-alert alert">A quiet success alert.</div>
 ```

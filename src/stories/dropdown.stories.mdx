@@ -1,15 +1,13 @@
-import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"
 import {
   Menu,
   MenuList,
   MenuButton,
   MenuItem,
   MenuLink,
-} from "@reach/menu-button";
-import {
-  downCaret,
-} from "@planningcenter/icons/paths/general";
-import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+} from "@reach/menu-button"
+import { downCaret } from "@planningcenter/icons/paths/general"
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper"
 
 <Meta title="Legacy/Dropdowns" />
 
@@ -32,10 +30,11 @@ export function Icon({ desc, name, path, title, style, ...props }) {
       <desc>{desc}</desc>
       <path d={path} fill="currentColor" />
     </svg>
-  );
+  )
 }
 
 ## Dropdown Menu
+
 For dropdowns, we use [Reach MenuButton](https://reach.tech/menu-button/). We use a few of our own class names for custom styling.
 
 <Preview>
@@ -43,12 +42,15 @@ For dropdowns, we use [Reach MenuButton](https://reach.tech/menu-button/). We us
     <div
       data-color-scheme="light"
       data-contrast="low"
-      style={{paddingBottom: "1rem"}}
+      style={{ paddingBottom: "1rem" }}
     >
       <Menu>
         <MenuButton className="compact-btn secondary-btn btn">
           Open menu
-          <span data-reach-menu-button-toggle-icon style={{marginLeft: "4px", position: "relative", top: 1}}>
+          <span
+            data-reach-menu-button-toggle-icon
+            style={{ marginLeft: "4px", position: "relative", top: 1 }}
+          >
             <Icon
               title="Down caret"
               desc="Open Church Center Publishing status menu"
@@ -79,12 +81,14 @@ For dropdowns, we use [Reach MenuButton](https://reach.tech/menu-button/). We us
   </Story>
 </Preview>
 
+<!-- prettier-ignore -->
 | Dropdown classes |  |
 | ---- | ---- |
 | <code>MenuButton</code> | use the button class you desire; in most cases, <code>.secondary-btn.btn</code> |
 | <code>MenuLink</code> | <code>.dropdown-menu-item</code> |
 
 ### Usage
+
 ```html
 <Menu>
   <MenuButton className="compact-btn secondary-btn btn">

@@ -1,5 +1,5 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import ColorSchemeWrapper from "../utils/color-scheme-wrapper";
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"
+import ColorSchemeWrapper from "../utils/color-scheme-wrapper"
 
 <Meta title="Legacy/Color" />
 
@@ -15,7 +15,7 @@ export function SampleColorLayout(props) {
       }}
       {...props}
     />
-  );
+  )
 }
 
 export function Color({ bgColor, color, colorName, colorHsl, ...props }) {
@@ -42,7 +42,7 @@ export function Color({ bgColor, color, colorName, colorHsl, ...props }) {
       </div>
       <div style={{ paddingTop: "1rem" }}>{bgColor}</div>
     </div>
-  );
+  )
 }
 
 <Preview>

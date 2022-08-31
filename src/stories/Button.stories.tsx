@@ -1,42 +1,42 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import React from "react"
+import { Story, Meta } from "@storybook/react"
 
-import { Button, ButtonProps } from '../components/Button';
+import { Button, ButtonProps } from "../components/Button"
 
 export default {
-  title: 'Components/Button',
+  title: "Components/Button",
   component: Button,
   argTypes: {
-    variant: { 
-      control: 'select'
+    variant: {
+      control: "select",
     },
     size: {
-      control: "select"
+      control: "select",
     },
     disabled: {
-      control: "boolean"
-    }
+      control: "boolean",
+    },
   },
-} as Meta;
+} as Meta
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
-  label: 'Default Button',
-  variant: 'filled',
-  size: 'lg',
-  disabled: false
-};
+  label: "Default Button",
+  variant: "filled",
+  size: "lg",
+  disabled: false,
+}
 
-export const Large = Template.bind({});
+export const Large = Template.bind({})
 Large.args = {
-  label: 'Large Button',
-  size: 'lg',
-};
+  label: "Large Button",
+  size: "lg",
+}
 
-export const Small = Template.bind({});
+export const Small = Template.bind({})
 Small.args = {
-  label: 'Small Button',
-  size: 'sm',
-};
+  label: "Small Button",
+  size: "sm",
+}
