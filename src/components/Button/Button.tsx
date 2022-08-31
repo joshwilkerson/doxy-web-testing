@@ -5,6 +5,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
+  theme?: "primary" | "destroy" | "alert"
   size?: "lg" | "md" | "sm" | "xs"
   label: string
   disabled: boolean
@@ -17,6 +18,7 @@ export interface ButtonProps {
 export const Button: React.FC<ButtonProps> = ({
   size = "lg",
   label = "",
+  theme = "primary",
   variant = "filled",
   disabled = false,
   ...props
@@ -27,13 +29,18 @@ export const Button: React.FC<ButtonProps> = ({
     } else if (variant == "outline") {
       return "secondary-btn"
     } else {
-      return "primary-btn"
+      return "filled-btn"
     }
   }
   return (
     <button
       type="button"
-      className={["btn", `${size}-btn`, `${getVariantClass()}`].join(" ")}
+      className={[
+        "btn",
+        `${size}-btn`,
+        `${getVariantClass()}`,
+        `${theme}-btn`,
+      ].join(" ")}
       disabled={disabled}
       {...props}
     >

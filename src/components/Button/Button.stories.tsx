@@ -1,12 +1,15 @@
 import React from "react"
 import { Story, Meta } from "@storybook/react"
 
-import { Button, ButtonProps } from "../components/Button"
+import { Button, ButtonProps } from "./Button"
 
 export default {
   title: "Components/Button",
   component: Button,
   argTypes: {
+    theme: {
+      control: "select",
+    },
     variant: {
       control: "select",
     },
@@ -23,9 +26,10 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  label: "Default Button",
+  theme: "primary",
   variant: "filled",
   size: "lg",
+  label: "Default Button",
   disabled: false,
 }
 
