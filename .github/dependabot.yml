@@ -15,7 +15,5 @@ updates:
       - dependency-name: "@planningcenter*"
     assignees:
       - "joshwilkerson"
-      - "dsecrest"
     labels:
       - "dependencies"
-      
