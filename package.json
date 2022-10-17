@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ministrycentered/doxy-web.git"
+    "url": "git+https://github.com/planningcenter/doxy-web.git"
   },
   "author": "Josh Wilkerson <jgwilkerson@gmail.com>",
   "license": "MIT",
-  "homepage": "http://ministrycentered.github.io/doxy-web",
+  "homepage": "http://planningcenter.github.io/doxy-web",
   "np": {
     "tests": false,
     "releaseDraft": true
