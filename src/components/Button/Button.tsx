@@ -2,9 +2,6 @@ import React from "react"
 
 export interface ButtonProps {
   variant?: "filled" | "outline" | "naked"
-  /**
-   * How large should the button be?
-   */
   theme?: "primary" | "destroy" | "alert"
   size?: "lg" | "md" | "sm" | "xs"
   label: string
@@ -12,9 +9,6 @@ export interface ButtonProps {
   onClick: () => void
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button: React.FC<ButtonProps> = ({
   size = "lg",
   label = "",
