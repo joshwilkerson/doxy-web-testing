@@ -1,101 +1,81 @@
-// We will have 2 versions of minions available, but only temporarily.
-// The `minions_rails` gem is no longer supported, but all of our products
-// use it or have used it. In an effort to get it out of our products, and get
-// us on the right npm package, we need to have 2 minions options for Church
-// Center apps. We'll have the old one, which apps will use until they remove
-// the gem. We'll also have this file, which imports from the supported package.
-// Once all of our products are off the unsupported gem, we'll remove the other 
-// minions file.
+@import "@planningcenter/minions/packages/align-items/align-items";
+@import "@planningcenter/minions/packages/align-items/dist/material/align-items--mn";
+@import "@planningcenter/minions/packages/align-items/dist/material/align-items--xs";
+@import "@planningcenter/minions/packages/align-items/dist/material/align-items--sm";
+@import "@planningcenter/minions/packages/align-items/dist/material/align-items--md";
+@import "@planningcenter/minions/packages/align-items/dist/material/align-items--lg";
+@import "@planningcenter/minions/packages/align-items/dist/material/align-items--xl";
 
-// Jan 2022: switched to "material" breakpoints from package to resolve sass compiling errors 
-// (breakpoint values line up with what we previously defined for SCSS variables) 👇
+@import "@planningcenter/minions/packages/align-self/align-self";
+@import "@planningcenter/minions/packages/align-self/dist/material/align-self--mn";
+@import "@planningcenter/minions/packages/align-self/dist/material/align-self--xs";
+@import "@planningcenter/minions/packages/align-self/dist/material/align-self--sm";
+@import "@planningcenter/minions/packages/align-self/dist/material/align-self--md";
+@import "@planningcenter/minions/packages/align-self/dist/material/align-self--lg";
+@import "@planningcenter/minions/packages/align-self/dist/material/align-self--xl";
 
-// mn: min-width: 0px
-// xs: min-width: 480px
-// sm: min-width: 600px
-// md: min-width: 720px
-// lg: min-width: 960px
-// xl: min-width: 1200px
+@import "@planningcenter/minions/packages/display/display";
+@import "@planningcenter/minions/packages/display/dist/material/display--mn";
+@import "@planningcenter/minions/packages/display/dist/material/display--xs";
+@import "@planningcenter/minions/packages/display/dist/material/display--sm";
+@import "@planningcenter/minions/packages/display/dist/material/display--md";
+@import "@planningcenter/minions/packages/display/dist/material/display--lg";
+@import "@planningcenter/minions/packages/display/dist/material/display--xl";
 
+@import "@planningcenter/minions/packages/flex/flex";
+@import "@planningcenter/minions/packages/flex/dist/material/flex--mn";
+@import "@planningcenter/minions/packages/flex/dist/material/flex--xs";
+@import "@planningcenter/minions/packages/flex/dist/material/flex--sm";
+@import "@planningcenter/minions/packages/flex/dist/material/flex--md";
+@import "@planningcenter/minions/packages/flex/dist/material/flex--lg";
+@import "@planningcenter/minions/packages/flex/dist/material/flex--xl";
 
-@import "minions.css/packages/align-items/align-items";
-@import "minions.css/packages/align-items/dist/material/align-items--mn";
-@import "minions.css/packages/align-items/dist/material/align-items--xs";
-@import "minions.css/packages/align-items/dist/material/align-items--sm";
-@import "minions.css/packages/align-items/dist/material/align-items--md";
-@import "minions.css/packages/align-items/dist/material/align-items--lg";
-@import "minions.css/packages/align-items/dist/material/align-items--xl";
+@import "@planningcenter/minions/packages/flex-wrap/flex-wrap";
+@import "@planningcenter/minions/packages/flex-wrap/dist/material/flex-wrap--mn";
+@import "@planningcenter/minions/packages/flex-wrap/dist/material/flex-wrap--xs";
+@import "@planningcenter/minions/packages/flex-wrap/dist/material/flex-wrap--sm";
+@import "@planningcenter/minions/packages/flex-wrap/dist/material/flex-wrap--md";
+@import "@planningcenter/minions/packages/flex-wrap/dist/material/flex-wrap--lg";
+@import "@planningcenter/minions/packages/flex-wrap/dist/material/flex-wrap--xl";
 
-@import "minions.css/packages/align-self/align-self";
-@import "minions.css/packages/align-self/dist/material/align-self--mn";
-@import "minions.css/packages/align-self/dist/material/align-self--xs";
-@import "minions.css/packages/align-self/dist/material/align-self--sm";
-@import "minions.css/packages/align-self/dist/material/align-self--md";
-@import "minions.css/packages/align-self/dist/material/align-self--lg";
-@import "minions.css/packages/align-self/dist/material/align-self--xl";
+@import "@planningcenter/minions/packages/justify-content/justify-content";
+@import "@planningcenter/minions/packages/justify-content/dist/material/justify-content--mn";
+@import "@planningcenter/minions/packages/justify-content/dist/material/justify-content--xs";
+@import "@planningcenter/minions/packages/justify-content/dist/material/justify-content--sm";
+@import "@planningcenter/minions/packages/justify-content/dist/material/justify-content--md";
+@import "@planningcenter/minions/packages/justify-content/dist/material/justify-content--lg";
+@import "@planningcenter/minions/packages/justify-content/dist/material/justify-content--xl";
 
-@import "minions.css/packages/display/display";
-@import "minions.css/packages/display/dist/material/display--mn";
-@import "minions.css/packages/display/dist/material/display--xs";
-@import "minions.css/packages/display/dist/material/display--sm";
-@import "minions.css/packages/display/dist/material/display--md";
-@import "minions.css/packages/display/dist/material/display--lg";
-@import "minions.css/packages/display/dist/material/display--xl";
+@import "@planningcenter/minions/packages/line-height/line-height";
 
-@import "minions.css/packages/flex/flex";
-@import "minions.css/packages/flex/dist/material/flex--mn";
-@import "minions.css/packages/flex/dist/material/flex--xs";
-@import "minions.css/packages/flex/dist/material/flex--sm";
-@import "minions.css/packages/flex/dist/material/flex--md";
-@import "minions.css/packages/flex/dist/material/flex--lg";
-@import "minions.css/packages/flex/dist/material/flex--xl";
+@import "@planningcenter/minions/packages/overflow/overflow";
+@import "@planningcenter/minions/packages/overflow/dist/material/overflow--mn";
+@import "@planningcenter/minions/packages/overflow/dist/material/overflow--xs";
+@import "@planningcenter/minions/packages/overflow/dist/material/overflow--sm";
+@import "@planningcenter/minions/packages/overflow/dist/material/overflow--md";
+@import "@planningcenter/minions/packages/overflow/dist/material/overflow--lg";
+@import "@planningcenter/minions/packages/overflow/dist/material/overflow--xl";
 
-@import "minions.css/packages/flex-wrap/flex-wrap";
-@import "minions.css/packages/flex-wrap/dist/material/flex-wrap--mn";
-@import "minions.css/packages/flex-wrap/dist/material/flex-wrap--xs";
-@import "minions.css/packages/flex-wrap/dist/material/flex-wrap--sm";
-@import "minions.css/packages/flex-wrap/dist/material/flex-wrap--md";
-@import "minions.css/packages/flex-wrap/dist/material/flex-wrap--lg";
-@import "minions.css/packages/flex-wrap/dist/material/flex-wrap--xl";
+@import "@planningcenter/minions/packages/position/position";
+@import "@planningcenter/minions/packages/position/dist/material/position--mn";
+@import "@planningcenter/minions/packages/position/dist/material/position--xs";
+@import "@planningcenter/minions/packages/position/dist/material/position--sm";
+@import "@planningcenter/minions/packages/position/dist/material/position--md";
+@import "@planningcenter/minions/packages/position/dist/material/position--lg";
+@import "@planningcenter/minions/packages/position/dist/material/position--xl";
 
-@import "minions.css/packages/justify-content/justify-content";
-@import "minions.css/packages/justify-content/dist/material/justify-content--mn";
-@import "minions.css/packages/justify-content/dist/material/justify-content--xs";
-@import "minions.css/packages/justify-content/dist/material/justify-content--sm";
-@import "minions.css/packages/justify-content/dist/material/justify-content--md";
-@import "minions.css/packages/justify-content/dist/material/justify-content--lg";
-@import "minions.css/packages/justify-content/dist/material/justify-content--xl";
+@import "@planningcenter/minions/packages/text-align/text-align";
+@import "@planningcenter/minions/packages/text-align/dist/material/text-align--mn";
+@import "@planningcenter/minions/packages/text-align/dist/material/text-align--xs";
+@import "@planningcenter/minions/packages/text-align/dist/material/text-align--sm";
+@import "@planningcenter/minions/packages/text-align/dist/material/text-align--md";
+@import "@planningcenter/minions/packages/text-align/dist/material/text-align--lg";
+@import "@planningcenter/minions/packages/text-align/dist/material/text-align--xl";
 
-@import "minions.css/packages/line-height/line-height";
-
-@import "minions.css/packages/overflow/overflow";
-@import "minions.css/packages/overflow/dist/material/overflow--mn";
-@import "minions.css/packages/overflow/dist/material/overflow--xs";
-@import "minions.css/packages/overflow/dist/material/overflow--sm";
-@import "minions.css/packages/overflow/dist/material/overflow--md";
-@import "minions.css/packages/overflow/dist/material/overflow--lg";
-@import "minions.css/packages/overflow/dist/material/overflow--xl";
-
-@import "minions.css/packages/position/position";
-@import "minions.css/packages/position/dist/material/position--mn";
-@import "minions.css/packages/position/dist/material/position--xs";
-@import "minions.css/packages/position/dist/material/position--sm";
-@import "minions.css/packages/position/dist/material/position--md";
-@import "minions.css/packages/position/dist/material/position--lg";
-@import "minions.css/packages/position/dist/material/position--xl";
-
-@import "minions.css/packages/text-align/text-align";
-@import "minions.css/packages/text-align/dist/material/text-align--mn";
-@import "minions.css/packages/text-align/dist/material/text-align--xs";
-@import "minions.css/packages/text-align/dist/material/text-align--sm";
-@import "minions.css/packages/text-align/dist/material/text-align--md";
-@import "minions.css/packages/text-align/dist/material/text-align--lg";
-@import "minions.css/packages/text-align/dist/material/text-align--xl";
-
-@import "minions.css/packages/width/width";
-@import "minions.css/packages/width/dist/material/width--mn";
-@import "minions.css/packages/width/dist/material/width--xs";
-@import "minions.css/packages/width/dist/material/width--sm";
-@import "minions.css/packages/width/dist/material/width--md";
-@import "minions.css/packages/width/dist/material/width--lg";
-@import "minions.css/packages/width/dist/material/width--xl";
+@import "@planningcenter/minions/packages/width/width";
+@import "@planningcenter/minions/packages/width/dist/material/width--mn";
+@import "@planningcenter/minions/packages/width/dist/material/width--xs";
+@import "@planningcenter/minions/packages/width/dist/material/width--sm";
+@import "@planningcenter/minions/packages/width/dist/material/width--md";
+@import "@planningcenter/minions/packages/width/dist/material/width--lg";
+@import "@planningcenter/minions/packages/width/dist/material/width--xl";

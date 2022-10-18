@@ -1442,6 +1442,15 @@
   dependencies:
     "@planningcenter/symbol" "^4.0.0-alpha.0"
 
+"@planningcenter/minions@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@planningcenter/minions/-/minions-1.0.0.tgz#54a6f839c6dc1210e8b6a779be0caca1e2c852fb"
+  integrity sha512-bqvHnBvEMbZhL131aUI6MKwsIUiGAu+MYfTF942lmN8APV12atOJdHZ2l0mLxYamgrHR5HQz0y4L7/Uqy9o6Tw==
+  dependencies:
+    consolidate "^0.14.5"
+    lodash "^4.17.2"
+    mkdirp "^0.5.1"
+
 "@planningcenter/symbol@^4.0.0-alpha.0":
   version "4.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@planningcenter/symbol/-/symbol-4.0.0-alpha.2.tgz#efbd0528b26e851082ad7e2a3cc43b4a08f24b15"
@@ -2830,9 +2839,9 @@
   integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
 
 "@types/react@^18.0.17":
-  version "18.0.18"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.18.tgz#9f16f33d57bc5d9dca848d12c3572110ff9429ac"
-  integrity sha512-6hI08umYs6NaiHFEEGioXnxJ+oEhY3eRz8VCUaudZmGdtvPviCJB8mgaMxaDWAdPSYd4eFavrPk2QIolwbLYrg==
+  version "18.0.21"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.21.tgz#b8209e9626bb00a34c76f55482697edd2b43cc67"
+  integrity sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -11512,9 +11521,9 @@ typedarray@^0.0.6:
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
 typescript@^4.8.2:
-  version "4.8.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.2.tgz#e3b33d5ccfb5914e4eeab6699cf208adee3fd790"
-  integrity sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==
+  version "4.8.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
+  integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
 
 uglify-js@^3.1.4:
   version "3.17.0"
