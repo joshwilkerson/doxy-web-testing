@@ -1435,10 +1435,10 @@
   resolved "https://registry.yarnpkg.com/@planningcenter/font-size/-/font-size-0.0.1-2.tgz#869d505ed1b189c77bdab410eb12a860194546ad"
   integrity sha512-5nVLrR073W/Dj1WbhzPC7epPpWMK+cZWJRWISf2l8jAnYm8dVskPBGFlYmR7dzFp3VXsDCxscPPjHe0AVoWuqQ==
 
-"@planningcenter/icons@^14.4.1":
-  version "14.4.1"
-  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-14.4.1.tgz#cac06623c8e80a78427e2e90f2f0a866ca518209"
-  integrity sha512-tVu28bSU9ALPgNUw3mPejjuAWNpQAgmaG1k9uAil3kEKfjMipv11mTICjFwQJfyipRxQea0wuJ0/GkRCUzTH2w==
+"@planningcenter/icons@^14.5.0":
+  version "14.5.0"
+  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-14.5.0.tgz#b42f5354c8875f6e7bf7f63821ae7ba8a6d3b061"
+  integrity sha512-JxgtGVS+cObYFq6FZUDqANYm2vWxrbpWLasyx4Nma7oSLqEM4KZLvVKZAZK/+/1Y9w3iiTIHRBIRTwagETBWNw==
   dependencies:
     "@planningcenter/symbol" "^4.0.0-alpha.0"
 
@@ -8453,15 +8453,6 @@ minimist@^1.1.1, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5, minimist@^1.
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
-
-minions.css@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/minions.css/-/minions.css-0.3.2.tgz#27d99c6c3191a1a48e6f425b73307a55cd3ac2c7"
-  integrity sha512-Ka72zPwHX0e7C2ubWosTI1w/8abKbKE1Ho1gAsqHn0NcBfBr15PPCdcDKhEpg+/8O4g0W4IK0Sk/USFPUQPTSQ==
-  dependencies:
-    consolidate "^0.14.5"
-    lodash "^4.17.2"
-    mkdirp "^0.5.1"
 
 minipass-collect@^1.0.2:
   version "1.0.2"
