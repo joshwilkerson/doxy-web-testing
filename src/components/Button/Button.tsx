@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 export interface ButtonProps {
   variant?: "filled" | "outline" | "naked"
@@ -10,7 +10,7 @@ export interface ButtonProps {
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  size = 'lg',
+  size = "lg",
   label = "",
   theme = "primary",
   variant = "filled",
@@ -40,5 +40,5 @@ export const Button: React.FC<ButtonProps> = ({
     >
       {label}
     </button>
-  );
-};
+  )
+}
