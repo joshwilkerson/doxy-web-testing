@@ -1690,10 +1690,10 @@
   resolved "https://registry.yarnpkg.com/@planningcenter/font-size/-/font-size-0.0.1-2.tgz#869d505ed1b189c77bdab410eb12a860194546ad"
   integrity sha512-5nVLrR073W/Dj1WbhzPC7epPpWMK+cZWJRWISf2l8jAnYm8dVskPBGFlYmR7dzFp3VXsDCxscPPjHe0AVoWuqQ==
 
-"@planningcenter/icons@^14.0.0":
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-14.0.0.tgz#16556a709cc0786c7b66b3da9eb29dae05587e8c"
-  integrity sha512-NJgG9YhE1QYNg43ijV9h+Vh4bUbNj07Ex70gK0Qsppt8gBQYWhH9FEUItEBijF/r2GD/73SPHEEGXXX1n6oj4A==
+"@planningcenter/icons@^14.11.0":
+  version "14.11.0"
+  resolved "https://registry.yarnpkg.com/@planningcenter/icons/-/icons-14.11.0.tgz#39a0ed1284b00cd22907b9bbda2780114ea25a47"
+  integrity sha512-AjVuFinRCu+1P9dcCPDwwaHFNvOT7HBffnyNLH3OFd/kZUrGCtt8b5hcK3BOlQzw8g3VXvZGYV4UisakijU3zQ==
   dependencies:
     "@planningcenter/symbol" "^4.0.0-alpha.0"
 
