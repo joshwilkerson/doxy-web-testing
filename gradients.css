@@ -1,0 +1,75 @@
+
+:root {
+    --gradientAccountsBrandGradient: linear-gradient(
+          151.48deg,
+          #32a7f0 0%,   
+          #3f75e5 100%  
+        )
+        ;    
+    --gradientCalendarBrandGradient: linear-gradient(
+          151.48deg,
+          #f25436 0%,   
+          #cd4d38 100%  
+        )
+        ;    
+    --gradientCheckinsBrandGradient: linear-gradient(
+          151.48deg,
+          #a76ebe 0%,   
+          #875e96 100%  
+        )
+        ;    
+    --gradientChurchCenterBrandGradient: linear-gradient(
+          151.48deg,
+          #42a5f5 0%,   
+          #66bb6a 100%  
+        )
+        ;    
+    --gradientGivingBrandGradient: linear-gradient(
+          90deg,
+          #f5c426 0%,   
+          #f2b327 100%  
+        )
+        ;    
+    --gradientGroupsBrandGradient: linear-gradient(
+          151.48deg,
+          #ff962d 0%,   
+          #fc7638 100%  
+        )
+        ;    
+    --gradientPeopleBrandGradient: linear-gradient(
+          151.48deg,
+          #32a0f0 0%,   
+          #3f75e5 100%  
+        )
+        ;    
+    --gradientPublishingBrandGradient: linear-gradient(
+          151.48deg,
+          #777782 0%,   
+          #5e5e69 100%  
+        )
+        ;    
+    --gradientRegistrationsBrandGradient: linear-gradient(
+          151.48deg,
+          #42b39c 0%,   
+          #46938c 100%  
+        )
+        ;    
+    --gradientServicesBrandGradient: linear-gradient(
+          151.48deg,
+          #6bb23d 0%,   
+          #659630 100%  
+        )
+        ;    
+    --gradientMusicStandBrandGradient: linear-gradient(
+          151.48deg,
+          #3291d2 0%,   
+          #3c7ec6 100%  
+        )
+        ;    
+    --gradientApiBrandGradient: linear-gradient(
+          180deg,
+          #3b78ff 0%,   
+          #0966ff 100%  
+        )
+        ;    
+}

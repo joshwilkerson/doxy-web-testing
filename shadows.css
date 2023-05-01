@@ -1,0 +1,6 @@
+
+:root {
+    --shadowFocusRingShadow: 0 0 4px 1px rgba(69,143,255,0.2);  
+    --shadowErrorRingShadow: 0 0 4px 1px rgba(194,68,48,0.2);  
+    --shadowPopoverDropShadow: 0 4px 4px 0 rgba(0,0,0,0.25);  
+}
