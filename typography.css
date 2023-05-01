@@ -1,0 +1,434 @@
+.typographyHeadingSize4400 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize4500 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize4700 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize3400 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize3500 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize3600 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize3700 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize2400 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize2500 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize2600 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyHeadingSize2700 
+ {
+  
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  letter-spacing:  
+  0em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize1400 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize1500 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize1600 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize1700 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize0Base400 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 165%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize0Base500 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 165%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize0Base600 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 165%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographyTextSize0Base700 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 165%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize1400 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize1500 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize1600 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize1700 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize2400 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize2500 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize2600 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize2700 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize3400 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 125%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize3500 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 125%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize3600 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 125%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
+.typographySmallTextSize3700 
+ {
+  
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 125%;
+  letter-spacing:  
+  -0.01em;
+  text-indent: 0px;
+  
+}    
+
